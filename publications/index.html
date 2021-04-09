@@ -1,0 +1,74 @@
+---
+layout: default
+title: barthel laboratory / publications
+categories:
+ - publications
+---
+
+<!--{% for publication in site.categories.publications %}
+    {% cycle 'add rows': '<div class="row">', '', '' %}
+		<div class="col-lg-4 paperbox">
+			<div class="media">
+ 			 	<div class="media-body">
+    			<div class="smallhead mb-1"><a href="{{ publication.url }}" class="off">{{ publication.title }}</a></div>
+    			<p class="note">{{ publication.ref }}</p>
+  			</div>
+        <a href="{{ publication.url }}">
+          <img class="ml-3" width=100 class="media-object" src="{{ publication.image }}">
+        </a>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+        </div>
+    {% cycle 'close rows': '', '', '</div>' %}
+{% endfor %}
+{% cycle 'close rows': '', '</div>', '</div>' %}-->
+
+{% for publication in site.categories.publications %}
+  {% capture prev_year %}{{ this_year }}{% endcapture %}
+  {% capture this_year %}{{ publication.year }}{% endcapture %}
+
+  {% if forloop.first %}
+    {% assign counter = 0 %}
+  <div class="row">
+    <div class="col-md-12">
+      <h1>{{ this_year }}</h1>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+  {% elsif this_year != prev_year %}
+    {% assign counter = 0 %}
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h1>{{ this_year }}</h1>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+  {% else %}
+    {% assign counter = counter | plus: 1 %}
+    {% assign mod = counter | modulo: 2 %}
+    {% if mod == 0 %}
+  </div>
+  <div class="row">
+    {% endif %}
+  {% endif %}
+
+  <div class="col-md-6 paperbox">
+      <div class="media">
+        <div class="media-body">
+          <div class="smallhead mb-1"><a href="{{ publication.url }}" class="off">{{ publication.title }}</a></div>
+          <p class="note">{{ publication.ref }}</p>
+        </div>
+        <a href="{{ publication.url }}">
+          <img class="ml-3" width=100 class="media-object" src="{{ publication.image }}">
+        </a>
+      </div>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+        </div>
+
+{% endfor %}
+  </div>
