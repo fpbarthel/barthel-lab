@@ -1,6 +1,6 @@
-name: Test test test
-description: More test
-url: https://fpbarthel.github.io/blotter/
+name: The Barthel Lab
+description: Website for the Barthel Laboratory at TGen (Phoenix, AZ)
+url: https://www.barthel-lab.com/
 
 markdown: kramdown
 permalink: /:categories/:title/
