@@ -1,0 +1,97 @@
+---
+layout: default
+title: barthel laboratory / research
+categories:
+ - research
+---
+
+<script>
+function restartVideo(){
+vid.currentTime = 0.1; //setting to zero breaks iOS 3.2, the value won't update, values smaller than 0.1 was causing bug as well.
+vid.play();
+}
+
+//loop video
+vid.addEventListener('ended', restartVideo, false);
+</script>
+
+<h1>Overview</h1>
+
+<div class="row">
+	<div class="col-md-12">
+		<p class="text-justify">
+		The overarching goal of the laboratory is to unravel the role of telomere dysfunction in gliomagenesis and evolution. While the biochemistry of telomere dysfunction has been defined at a high resolution, little is known about its broader impact on tumor genomes and role in tumorigenesis and evolution. The laboratory will map the full ramifications of telomere dysfunction on glioma genomes, both as a tumor suppressor by promoting genomic instability, and as an oncogene by facilitating tumorigenic mutations. To achieve these goals, we employ custom next-generation genomics technologies (whole genome, long read, chromatin capture and single-cell sequencing) on rigorously  engineered model systems and patient samples.
+		</p>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-md-8">
+		<div class="video-container">
+			<video width="100%" height="100%" class="video-fluid z-depth-1" autoplay loop muted>
+				<source src="/images/research/3d-phylo-brain.m4v" type="video/mp4"/>
+			</video>
+			<p class="text-figure-legend">
+				<b>Figure 1. Tumor phylogenetic trees (ancestry trees) linking multiple samples from three distinct gliomas projected into its original spatial context and onto a reference brain space.</b> Samples from each tumor are shown by labeled points and the phylogeny (ancestry tree) was transformed in phylomorphospace using the sample coordinates as parameters. Lines represent phylogenetic (ancestral) relationships between samples. Tumor volumes are indicated by the gold (FLAIR) and orange-red (T1+Gado) overlays. Subcortical structures are shown as colored volumes. A reference brain volume (Montreal Neurological Institute) is shown in gray.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<h1>Research Projects</h1>
+
+<h2>Mapping the signatures of telomere dysfunction in glioma</h2>
+
+<div class="row">
+	<div class="col-md-8">
+		<p class="text-justify">
+		Dysfunctional telomeres are critically short telomeres vulnerable to aberrant DNA repair. Until properly capped, they undergo cycles of breakage, end-to-end fusion and bridge formation (BFB-cycles) with each cell cycle. Cells demonstrating this phenomenon are generally aneuploid and demonstrate disorganized genomes rich in structural variation. We are developing novel computational methods that use short and long read DNA sequencing data to detect, quantify and characterize individual telomere fusions. By mapping these events in model systems and patient samples we will garner a complete understanding of the impact of telomere dysfunction on tumor cells and its role in gliomagenesis.
+		</p>
+		<p class="text-figure-legend">
+			<b>Figure 2. Genomic instability related to telomere dysfunction. a.</b> Schematic illustrating BFB-cycles. Following a single BFB-cycle, daughter cells are left with unequal DNA content, leading to unequal seggregation of genetic material. BFB-cycles may also involve fusion of non-sister telomeres (not shown). <b>b.</b> Successive BFB-cycles may form DNA palindromes demonstrating high intra-segmental homology. This can lead to intra-chromosomal fusions and formation of double minutes. <b>c.</b> Telomere dysfunction has also been linked to chromotripsis and following this phenomenon DNA segments can be rearranged, lost or circularized. DDR = DNA damage response; BFB = breakage-fusion-bridge
+		</p>
+	</div>
+	<div class="col-md-4">
+		<img src="/images/research/telomere-dysfunction-bfb.png"/>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<h2>Reconstructing evolutionary trajectories of glioma</h2>
+
+
+<div class="row">
+	<div class="col-md-8">
+		<p class="text-justify">
+		Sustained telomere dysfunction drives tumor genomes to the brink of destruction. Yet somehow cancer genomes seem to thrive under these catastrophic conditions. Tumor development can be thought of as an evolutionary process. Advantagous cellular changes promoting fitness are under selection to survive, whereas cellular lineages acquiring disadvantageous change rapidly become extinct. Using deep DNA and single-cell sequencing we study telomere dysfunction through the lens of evolution, piecing together distinct cellular lineages and temporally arranging genomic variation that arises from telomere dysfunction and other mutational processes (Figure 1). In reconstructing the evolutionary trajectories of tumorigenesis and progression we aim to identify targetable evolutionary bottlenecks and therapeutic vulnerabilties.
+		</p>
+		<p class="text-figure-legend">
+			<b>Figure 3. Clonal evolution (selection) and neutral evolution (drift) both contribute to glioma development.</b> Variation due to telomere dysfunction may fit either category. 
+		</p>
+	</div>
+	<div class="col-md-4">
+		<img src="/images/research/evolution.png"/>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<h2>Defining the regulatory landscape of functional and dysfunctional telomeric chromatin interactions</h2>
+
+<div class="row">
+	<div class="col-md-8">
+		<p class="text-justify">
+		Interphase telomeres form long-range chromatin interactions with other elements of the genome, but it is unclear what purpose these interactions serve. It was shown that telomeric sequences repress the transcription of nearby genes in a phenomenon known as the “telomere position effect”. Moreover, distal elements called “enhancers” can interact with a gene’s proximal promoter to regulate its transcription. Our laboratory is investigating whether telomeric chromatin interactions can interfere with enhancer-promoter interactions to play a hand in transcriptional regulation. We have developed a telomere interaction assay called “Telomere-C” to identify interactions between telomeres and the rest of the genome. Through employing Telomere-C in tightly controlled cellular systems, we will resolve whether telomeric chromatin interactions can control transcriptional permissiveness.
+		</p>
+		<p class="text-figure-legend">
+			<b>Figure 4. Library preparation protocol for telomeric chromatin interaction assay (Telomere-C).</b>
+		</p>
+	</div>
+	<div class="col-md-4">
+		<img src="/images/research/telo-c.png"/>
+	</div>
+</div>
+<div class="bigspacer"></div>

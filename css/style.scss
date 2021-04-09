@@ -1,0 +1,31 @@
+---
+---
+
+$primary: #2d85dd;
+$gray: #555;
+$gray-light: #777;
+$line-height-base: 1.6;
+$font-size-base: 0.875rem;
+$font-weight-bolder: bold;
+$body-bg: #ffffff;
+$code-color: #586E75;
+$pre-color: #586E75;
+$code-font-size: 90%;
+$well-bg: #f8f8f8;
+$pre-bg: #f8f8f8;
+$navbar-brand-font-size: 30px;
+$navbar-brand-padding-y: 0.0rem;
+$navbar-light-color: $gray-light;
+$navbar-padding-y: 0.0rem;
+$nav-pills-link-active-color: #555;
+$nav-pills-link-active-bg: #e7e7e7;
+$nav-pills-border-radius: 0px;
+
+@import "bootstrap/bootstrap";
+$fa-font-path: "font";
+@import "font-awesome/font-awesome";
+@import "katex";
+@import "solarized";
+
+// Needs to be last to overwrite others
+@import "custom";

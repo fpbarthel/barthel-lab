@@ -1,0 +1,116 @@
+---
+layout: default
+title: barthel laboratory
+categories:
+ - home
+---
+
+<div class="row">
+	<div class="col-lg-12">
+		<object class="pull-left biglogo" data="/images/logo.svg" type="image/svg+xml"></object>
+		<div class="bigtitle logobox">
+			the barthel laboratory
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="smallhead">
+      <p>
+        Welcome to the Barthel Laboratory. Set at the heart of the stunning Sonoran Desert, we study the role of telomere dysfunction in brain cancer (glioma) development and evolution. We are a part of the Cancer and Cell Biology Division at the <a href="https://www.tgen.org/">Translational Genomics Institute (TGen)</a> in Phoenix, AZ.
+      </p>
+      <!-- <object class="pull-left biglogo" data="/images/sonoran1.jpeg" type="image/jpeg"></object> -->
+      <p>
+        We are actively looking for new graduate students, postdoctoral fellows and staff to join our team. Please click here for more information.
+      </p>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-6">
+		<div class="head">
+			<a class="off" href="/news/">News</a>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="feedbox pad-left">
+			{% for news in site.categories.news limit:4 %}
+			
+				{% for member in site.categories.team %}
+					{% if member.title == news.author %}
+						{% assign author = member %}
+					{% endif %}
+				{% endfor %}		
+				
+				<div class="note-title">
+					<i class="fa fa-bullhorn fa-fw"></i>
+					<a class="off" href="{{ news.url }}">
+					{{ news.title }}
+					</a>
+				</div>
+				<div class="note">
+					{{ news.content }}
+				</div>
+				<div class="smallspacer"></div>
+				<div class="smallnote">
+					Posted
+					{{ news.date | date_to_string }}
+					{% if author %}
+					by <a class="off" href="{{ author.url }}">{{ author.title }}</a>
+					{% endif %}						
+				</div>
+				<div class="spacer"></div>	
+				<div class="spacer"></div>				
+			{% endfor %}
+		</div>
+		<div class="bigspacer"></div>		
+	</div>
+	<div class="col-md-6">
+		<div class="head">
+			<a class="off" href="/publications/">Publications
+			</a>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="feedbox pad-left">		
+			{% for paper in site.categories.publications limit:4 %}
+				<div class="note-title">
+					<i class="fa fa-file-text-o fa-fw"></i>
+					{% if paper.preprint %}
+					Preprint: 
+					<a class="off" href="{{ paper.url }}">
+					{{ paper.title }}
+					</a>
+					{% else %}
+					<a class="off" href="{{ paper.url }}">
+					{{ paper.title }}
+					</a>
+					{% endif %}
+					<br/>
+					<div class='shortref note'>
+					{{ paper.shortref }}
+					</div>
+				</div>
+				<div class="smallspacer"></div>
+				<div class="smallnote">
+					{% if paper.preprint %}
+					Posted
+					{% else %}
+					Published
+					{% endif %}
+					{{ paper.date | date_to_string }}
+				</div>
+				<div class="spacer"></div>	
+				<div class="spacer"></div>				
+			{% endfor %}
+		</div>
+		<div class="bigspacer"></div>		
+	</div>
+</div>
+
+<div class="bigspacer"></div>
