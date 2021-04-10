@@ -1,9 +1,9 @@
 
 .bighead,.bigtitle,.head,.navbar-brand,.navbar-nav,.navbar-text,.note,.smallhead,.smallnote,.note-title,.title,h1,h2,h3,h4,h5,h6,p,body,ul,li { font-family: "bicyclette",sans-serif; }
 
-h1, .h1 { font-size: 50; } /* ~34px */
-h2, .h2 { font-size: 40; } /* ~30px */
-h3, .h3 { font-size: ceil($font-size-base * 1.70); }  /* ~24px */
+h1, .h1 { font-size: 50; }
+h2, .h2 { font-size: 40; }
+h3, .h3 { font-size: 30; } 
 h4, .h4 { font-size: ceil($font-size-base * 1.25); }  /* ~18px */
 h5, .h5 { font-size: $font-size-base; }
 h6, .h6 { font-size: ceil($font-size-base * 0.85); }  /* ~12px */
@@ -104,6 +104,10 @@ b, strong {
 .navbar-footer {
 	font-size: 19px;
 	font-weight: 200;
+}
+
+.nav-footer {
+	line-height: 15px;
 }
 .navbar-text {
 	font-size: 15px;
