@@ -18,20 +18,24 @@ categories:
 <div class="row justify-content-center">
 	<div class="col-md-8">
 		<div class="video-container">
-			<video id="3dphylobrain" width="100%" height="100%" class="video-fluid z-depth-1" autoplay loop muted>
+			<video id="3dphylobrain" width="100%" height="100%" class="video-fluid z-depth-1" autoplay muted playsinline>
 				<source src="/images/research/3d-phylo-brain.m4v" type="video/mp4"/>
 			</video>
 			<script>
-				var myVideo = document.getElementById('3dphylobrain');
-				if (typeof myVideo.loop == 'boolean') { // loop supported
-				    myVideo.loop = true;
-				} else { // loop property not supported
-				    myVideo.on('ended', function () {
-				    this.currentTime = 0;
-				    this.play();
+				/*window.addEventListener('load', function(){
+				    var newVideo = document.getElementById('3dphylobrain');
+				    newVideo.addEventListener('videoEnd', function() {
+				        this.currentTime = 0;
+				        this.play();
 				    }, false);
-				}
-				myVideo.play();
+				    newVideo.play();
+				});*/
+
+				var newVideo = document.getElementById('3dphylobrain');
+				newVideo.on('ended',function(){
+    this.play();
+
+});
 			</script>
 			<p class="text-figure-legend">
 				<b>Figure 1. Tumor phylogenetic trees (ancestry trees) linking multiple samples from three distinct gliomas projected into its original spatial context and onto a reference brain space.</b> Samples from each tumor are shown by labeled points and the phylogeny (ancestry tree) was transformed in phylomorphospace using the sample coordinates as parameters. Lines represent phylogenetic (ancestral) relationships between samples. Tumor volumes are indicated by the gold (FLAIR) and orange-red (T1+Gado) overlays. Subcortical structures are shown as colored volumes. A reference brain volume (Montreal Neurological Institute) is shown in gray.
