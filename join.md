@@ -1,6 +1,6 @@
 ---
 layout: default
-title: barthel laboratory / join us
+title: join us
 categories:
  - join
 ---

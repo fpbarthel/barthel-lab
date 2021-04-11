@@ -42,7 +42,7 @@
 	<script src="/js/bootstrap.min.js"></script>
 
 	<!-- OpenGraph Cards -->
-	<meta property="og:title" content="{{ page.title }} - {{ site.description }}">
+	<meta property="og:title" content="{% if page.title == site.title %}{{ page.title }} - {{ site.description }}{% else %}{{ page.title }} - {{ site.title }}{% endif %}">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
 
