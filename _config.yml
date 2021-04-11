@@ -2,6 +2,10 @@ name: The Barthel Lab
 description: Website for the Barthel Laboratory at TGen (Phoenix, AZ)
 url: https://www.barthel-lab.com/
 
+logo: images/logo.png
+owner:
+  twitter: fpbarthel
+
 markdown: kramdown
 permalink: /:categories/:title/
 future: true
