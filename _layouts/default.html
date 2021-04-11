@@ -41,7 +41,12 @@
 	<!-- Bootstrap -->
 	<script src="/js/bootstrap.min.js"></script>
 
-	<!-- Social cards -->
+	<!-- OpenGraph Cards -->
+	<meta property="og:title" content="{{ page.title }}">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+	<!-- Twitter Cards -->
 	{% if page.videofeature %}
 	<meta name="twitter:card" content="player">
 		
