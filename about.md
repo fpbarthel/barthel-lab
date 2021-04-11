@@ -1,6 +1,6 @@
 ---
 layout: default
-title: barthel laboratory / about
+title: about
 categories:
  - about
 ---
