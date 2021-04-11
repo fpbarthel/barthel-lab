@@ -65,7 +65,7 @@
 			{% if page.imagefeature contains 'http' %}
 				{% assign domain = '' %}
 			{% else %}
-				{% assign domain = site.urlimg %}
+				{% assign domain = site.url %}
 			{% endif %}
 	
 	<meta name="twitter:image" content="{{ domain }}{{ page.imagefeature }}">
@@ -73,8 +73,14 @@
 		{% else %}
 	<meta name="twitter:image" content="{{ site.url }}{{ site.logo }}">
 		{% endif %}
+
+		{% if page.videofeature contains 'http' %}
+				{% assign domain = '' %}
+			{% else %}
+				{% assign domain = site.url %}
+			{% endif %}
 	
-	<meta name="twitter:player" content="{{ page.videofeature }}">
+	<meta name="twitter:player" content="{{domain}}{{ page.videofeature }}">
 	<meta name="twitter:player:width" content="1920">
 	<meta name="twitter:player:height" content="1080">
 	
@@ -83,7 +89,7 @@
 		{% if page.imagefeature contains 'http' %}
 			{% assign domain = '' %}
 		{% else %}
-			{% assign domain = site.urlimg %}
+			{% assign domain = site.url %}
 		{% endif %}
 
 	<meta name="twitter:card" content="summary_large_image">
