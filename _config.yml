@@ -3,7 +3,8 @@ description: "studying telomere dysfunction in gliomagenesis and evolution at TG
 url: https://www.barthel-lab.com
 
 logo: /images/logo.png
-owner:
+
+author:
   twitter: fpbarthel
 
 markdown: kramdown
@@ -14,6 +15,7 @@ sass:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
 
 exclude:
   - "*.branches"

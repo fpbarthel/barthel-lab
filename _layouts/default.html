@@ -47,7 +47,7 @@
 	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
 
 	<!-- Twitter Cards -->
-	{% if page.videofeature %} <!-- VIDEO FEATURE -->
+	{% if page.videofeature %}
 
 	<meta name="twitter:card" content="player">
 		
@@ -85,7 +85,7 @@
 	<meta name="twitter:player:width" content="1920">
 	<meta name="twitter:player:height" content="1080">
 	
-	{% elsif page.image %} <!-- IMAGE FEATURE -->
+	{% elsif page.image %}
 	
 		{% if page.image contains 'http' %}
 			{% assign domain = '' %}
@@ -94,13 +94,13 @@
 		{% endif %}
 
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@{{ site.owner.twitter }}">
+	<meta name="twitter:site" content="@{{ site.author.twitter }}">
 	<meta name="twitter:image" content="{{ domain }}{{ page.image }}">
 	
-	{% else %} <!-- NO IMAGE OR VIDEO FEATURE - DEFER TO STANDARD IMAGE -->
+	{% else %}
 	
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@{{ site.owner.twitter }}">
+	<meta name="twitter:site" content="@{{ site.author.twitter }}">
 	<meta name="twitter:image" content="{% if page.imagesummary %}{{ site.url }}{{ page.imagesummary }}{% else %}{{ site.url }}{{ site.logo }}{% endif %}">
 
 	{% endif %}
