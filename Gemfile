@@ -17,3 +17,5 @@ gem "webrick", "~> 1.7"
 
 # Sitemap
 gem 'jekyll-sitemap'
+
+gem "jekyll-feed", "~> 0.15.1"

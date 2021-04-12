@@ -35,6 +35,8 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
+    jekyll-feed (0.15.1)
+      jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (2.1.0)
       sassc (> 2.0.1, < 3.0)
     jekyll-sitemap (1.4.0)
@@ -82,6 +84,7 @@ PLATFORMS
 DEPENDENCIES
   execjs
   jekyll (= 4.2.0)
+  jekyll-feed (~> 0.15.1)
   jekyll-sitemap
   jekyll-twitter-plugin
   netrc
