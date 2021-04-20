@@ -4,7 +4,7 @@ layout: default
 
 {% assign member = page %}
 
-<div class="row">
+<!--<div class="row">
 	<div class="col-lg-12">
 		<div class="media">
 			{% if member.image %}
@@ -21,12 +21,39 @@ layout: default
 			</div>
 		</div>
 	</div>
+</div>-->
+
+<!--<div class="row">
+	<div class="col-lg-3">
+		<div class="media">
+			{% if member.image %}
+			<img class="pull-left pad-right media-object" width=120 src="{{ member.image }}">
+			{% endif %}
+		</div>
+	</div>
+	<div class="col-lg-9">
+		<div class="media-body titlebox">
+				<div class="bigtitle media-heading">
+					{{ member.title }}
+				</div>
+				<p>
+				<div class="smallhead">
+					{{ member.position }}
+				</div>
+			</div>
+	</div>
 </div>
 
-<div class="bigspacer"></div>
+<div class="bigspacer"></div>-->
 
 <div class="row">
 	<div class="col-lg-3">
+		<div class="media">
+			{% if member.image %}
+			<img class="pull-left pad-right media-object" src="{{ member.image }}">
+			{% endif %}
+		</div>
+		<div class="bigspacer"></div>
 		{% if member.cv %}
 		<div class="smallhead">
 			CV
@@ -118,6 +145,15 @@ layout: default
 		{% endif %}
 	</div>
 	<div class="col-lg-8">
+		<div class="media-body titlebox">
+				<div class="bigtitle media-heading">
+					{{ member.title }}
+				</div>
+				<div class="smallhead">
+					{{ member.position }}
+				</div>
+			</div>
+			<div class="hugespacer"></div>
 		<div class="post">
 			{{ content }}
 		</div>
