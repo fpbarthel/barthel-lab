@@ -1,0 +1,28 @@
+---
+layout: default
+title: join us
+categories:
+ - join
+---
+
+<div class="row">
+  <div class="col-lg-12">
+    <h1>Join our team</h1>
+    <p>
+      We are always seeking creative and motivated individuals who are passionate about science to strengthen our team! In return we will provide you with a diverse, fun and collaborative research environment. You will have the opportunity to work on highly exciting questions in telomere dysfunction and glioma evolution while being at the forefront of innovation in science. The listed positions are meant to serve as guidelines and prospective candidates are encouraged to reach out to <a href="/team/floris-barthel/">Floris</a> directly with any questions.
+    </p>
+  </div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+  <div class="col-lg-12">
+    <h2>Open positions</h2>
+    <ul>
+      {% for position in site.categories.join %}
+      <li><a href="{{ position.url }}" class="off">{{ position.title }} {% if position.subtitle %}({{ position.subtitle }}){% endif %}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

@@ -19,10 +19,10 @@ categories:
 <div class="row">
 	<div class="col-lg-12">
 		<div class="smallhead">
-     	<p class="text-justify">
+     	<p class="smallhead">
         Welcome to the Barthel Laboratory. Set to the backdrop of the stunning <a href="https://en.wikipedia.org/wiki/Sonoran_Desert">Sonoran Desert</a>, we study the role of telomere dysfunction in brain cancer (glioma) development and evolution. We are a part of the Cancer and Cell Biology Division at the <a href="https://www.tgen.org/">Translational Genomics Research Institute (TGen)</a> and the <a href="https://www.cityofhope.org/research/beckman-research-institute/research-departments-and-divisions/computational-and-quantitative-medicine">Department of Computational and Quantitative Medicine (DCQM)</a> at the <a href="https://www.cityofhope.org/research/beckman-research-institute">Beckman Research Institute (BRI)</a> at <a href="https://www.cityofhope.org/">City of Hope (COH)</a>.
      	</p>
-	    <p class="text-justify">
+	    <p class="smallhead">
 	    We are actively looking for new graduate students, postdoctoral fellows and staff to join our team. Please click <a href="/join/">here</a> for more information.
 	    </p>
 		</div>
@@ -32,7 +32,7 @@ categories:
 <div class="bigspacer"></div>
 
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-4">
 		<div class="head">
 			<a class="off" href="/news/">News</a>
 		</div>
@@ -53,7 +53,7 @@ categories:
 					</a>
 				</div>
 				<div class="note">
-					{{ news.content }}
+					{{ news.excerpt | remove: '<p>' | remove: '</p>' }}
 				</div>
 				<div class="smallspacer"></div>
 				<div class="smallnote">
@@ -69,10 +69,9 @@ categories:
 		</div>
 		<div class="bigspacer"></div>		
 	</div>
-	<div class="col-md-6">
+	<div class="col-md-4">
 		<div class="head">
-			<a class="off" href="/publications/">Publications
-			</a>
+			<a class="off" href="/publications/">Publications</a>
 		</div>
 		<div class="bigspacer"></div>
 		<div class="feedbox pad-left">		
@@ -102,6 +101,30 @@ categories:
 					Published
 					{% endif %}
 					{{ paper.date | date_to_string }}
+				</div>
+				<div class="spacer"></div>	
+				<div class="spacer"></div>				
+			{% endfor %}
+		</div>
+		<div class="bigspacer"></div>		
+	</div>
+	<div class="col-md-4">
+		<div class="head">
+			<a class="off" href="/join/">Open positions</a>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="feedbox pad-left">		
+			{% for position in site.categories.join limit:4 %}
+				<div class="note-title">
+					<a class="off" href="{{ position.url }}">
+						{{ position.title }}
+						{% if position.subtitle %}<i class="note">({{ position.subtitle }})</i>{% endif %}
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+				<div class="smallnote">
+					Open - Posted
+					{{ position.date | date_to_string }}
 				</div>
 				<div class="spacer"></div>	
 				<div class="spacer"></div>				

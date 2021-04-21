@@ -3,8 +3,8 @@ layout: job
 status: open
 category: trainee
 title: Postdoctoral Fellow
-subtitle: Tumor Evolution
-image: /images/research/evolution.png
+subtitle: 3d genomics
+image: /images/research/telo-c.png
 jobid: 534970
 ---
 

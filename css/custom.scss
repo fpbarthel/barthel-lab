@@ -3,14 +3,14 @@
 
 //p,body,ul { font-family: "basic sans",sans-serif; }
 
-h1, .h1 { font-size: 36px; }
-h2, .h2 { font-size: 33px; }
-h3, .h3 { font-size: 30px; } 
-h4, .h4 { font-size: ceil($font-size-base * 1.25); }  /* ~18px */
-h5, .h5 { font-size: $font-size-base; }
-h6, .h6 { font-size: ceil($font-size-base * 0.85); }  /* ~12px */
+h1, .h1 { font-size: 33px; }
+h2, .h2 { font-size: 30px; }
+h3, .h3 { font-size: 27px; } 
+//h4, .h4 { font-size: ceil($font-size-base * 1.25); }  /* ~18px */
+//h5, .h5 { font-size: $font-size-base; }
+//h6, .h6 { font-size: ceil($font-size-base * 0.85); }  /* ~12px */
 
-h1 { font-weight: 500; text-align: center; }
+h1 { font-weight: 300; text-align: center; }
 
 h2,
 h3,
@@ -24,10 +24,10 @@ body {
 	font-weight: 100;
 }
 
-p,li {
+body,p,li {
 	font-weight: 300;
-	font-size: 20px;
-	line-height: 25px;
+	font-size: 18px;
+	line-height: 23px;
 }
 
 /* other */
@@ -98,6 +98,7 @@ b, strong {
 	font-size: 30px;
 	font-weight: 200;
 	color: $gray-light;
+	line-height: 50px;
 }
 .navbar-nav,.nav-link {
 	font-size: 30px;
@@ -171,25 +172,25 @@ b, strong {
 }
 
 .smallhead {
-	font-size: 19px;
+	font-size: 20px;
 	font-weight: 300;
 	line-height: 23px;
 }
 
 .note-title {
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: 500;
-	line-height: 20px;
+	line-height: 18px;
 }
 
 .note {
-	font-size: 15px;
-	font-weight: 300;
+	font-size: 16px;
+	font-weight: 200;
 	line-height: 18px;
 }
 
 .smallnote {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 300;
 	line-height: 16px;
 }
@@ -204,8 +205,8 @@ b, strong {
 
 .text-figure-legend {
   font-weight: 300;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .hugespacer {
@@ -300,9 +301,9 @@ blockquote {
     height: 320px;
     overflow: hidden;
 	-webkit-mask-image: -webkit-gradient(linear, left 85%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-/*	-webkit-box-shadow: inset 0 -30px 10px -10px white; */
-/*	   -moz-box-shadow: inset 0 -30px 10px -10px white; */
-/*	        box-shadow: inset 0 -30px 10px -10px white; */
+	-webkit-box-shadow: inset 0 -30px 10px -10px white; 
+	   -moz-box-shadow: inset 0 -30px 10px -10px white; 
+	        box-shadow: inset 0 -30px 10px -10px white; 
 }
 
 .postbox {

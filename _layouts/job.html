@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{{ page.date | date: "%-d %b %Y" }}
-
 <div class="row">
 	<div class="col-lg-3">
 		<div class="media">
@@ -21,6 +19,51 @@ layout: default
 				{{ page.date | date: "%-d %b %Y" }}
 			</div>
 		</div>
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="smallhead">
+				Status
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				{{ page.status }}
+			</div>
+		</div>
+		<div class="bigspacer"></div>
+		{% if page.pdf %}
+		<div class="glyphbox note">
+			<div class="smallhead">
+				PDF
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-file-text-o fa-fw"></i>
+				<a class="off" href="{{ page.pdf }}">Job posting (PDF)</a>
+			</div>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		<div class="glyphbox note">
+			<div class="smallhead">
+				Apply for this position
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-file-text-o fa-fw"></i>
+				<a class="off" href="https://recruiting.paylocity.com/Recruiting/Jobs/Details/{{ page.jobid }}">Details</a>
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-file-text-o fa-fw"></i>
+				<a class="off" href="https://recruiting.paylocity.com/Recruiting/Jobs/Apply/{{ page.jobid }}">Apply now</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+
+
+		<div class="bigspacer"></div>
+
+		
 	</div>
 	<div class="col-lg-8">
 		<div class="media-body titlebox">
