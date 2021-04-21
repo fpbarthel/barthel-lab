@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{{ page.date | date: "%-d %b %Y" }}
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="media">
+			{% if page.image %}
+			<img class="pull-left pad-right media-object" src="{{ page.image }}">
+			{% endif %}
+		</div>
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			<div class="smallhead">
+				Date Posted
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				{{ page.date | date: "%-d %b %Y" }}
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-8">
+		<div class="media-body titlebox">
+			<div class="title media-heading">
+				{{ page.title }}
+			</div>
+			<div class="smallhead">
+				{{ page.subtitle }}
+			</div>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="post">
+			{{ content }}
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
