@@ -47,7 +47,6 @@ exclude:
   - "*.trees"
   - "*.tsv"
   - "*.txt"
-  - "*.xml"
   - "*.zip"
   - "Gemfile"
   - "Gemfile.lock"

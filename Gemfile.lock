@@ -84,7 +84,7 @@ PLATFORMS
 DEPENDENCIES
   execjs
   jekyll (= 4.2.0)
-  jekyll-feed (~> 0.15.1)
+  jekyll-feed
   jekyll-sitemap
   jekyll-twitter-plugin
   netrc
