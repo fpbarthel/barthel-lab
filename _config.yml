@@ -20,6 +20,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
+feed:
+  categories:
+    - news
+
 exclude:
   - "*.branches"
   - "*.class"

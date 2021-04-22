@@ -4,6 +4,9 @@ title: sitemap
 categories:
  - sitemap
 ---
+
+# Sitemap
+
 * [Home](/)
 * [Research](/research)
 * [News](/news)
@@ -14,3 +17,5 @@ categories:
 * [Contact Us](/contact)
 
 View our sitemap in [XML](/sitemap.xml)
+
+View our feed in [XML](/feed.xml)
