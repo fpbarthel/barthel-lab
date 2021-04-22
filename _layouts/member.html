@@ -153,7 +153,7 @@ layout: default
 					{{ member.position }}
 				</div>
 			</div>
-			<div class="hugespacer"></div>
+			<div class="bigspacer"></div>
 		<div class="post">
 			{{ content }}
 		</div>
@@ -162,7 +162,7 @@ layout: default
 		{% assign firstinitial = member.title | split: ' ' | first | slice: 0 %}
 		{% assign searchstring = lastname | append: ' ' | append: firstinitial %}
 
-		{% for paper in site.categories.papers %}
+		{% for paper in site.categories.publications %}
 		{% if paper.authors contains searchstring %}
 		{% assign papersq = true %}
 		{% endif %}
@@ -172,39 +172,14 @@ layout: default
 		<div class="bigspacer"></div>
 		<div class="head">Papers</div>
 		<div class="spacer"></div>
-		{% for paper in site.categories.papers %}
+		{% for paper in site.categories.publications %}
 		{% if paper.authors contains searchstring %}
 		<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
 		{% endif %}
 		{% endfor %}
 		{% endif %}
 
-		{% for project in site.data.projects %}
-			{% for contributor in project.contributors %}
-				{% if contributor.login == member.github %}
-					{% assign projectsq = true %}
-				{% endif %}
-			{% endfor %}
-		{% endfor %}
-
-		{% if projectsq == true %}
-		<div class="bigspacer"></div>
-		<div class="head">Projects</div>
-		<div class="spacer"></div>
-		{% for project in site.data.projects %}
-			{% assign present = false %}
-			{% for contributor in project.contributors %}
-				{% if contributor.login == member.github %}
-					{% assign present = true %}
-				{% endif %}
-			{% endfor %}
-			{% if present == true %}
-				<p><a href="{{ project.url }}" class="off">{{ project.title }} - {{ project.description }}</a>
-			{% endif %}
-		{% endfor %}
-		{% endif %}
-
-		{% for post in site.categories.blog %}
+		{% for post in site.categories.news %}
 			{% if post.author %}
 				{% if member.title == post.author %}
 					{% assign postsq = true %}
@@ -221,9 +196,9 @@ layout: default
 
 		{% if postsq == true %}
 			<div class="bigspacer"></div>
-			<div class="head">Posts</div>
+			<div class="head">News</div>
 			<div class="spacer"></div>
-			{% for post in site.categories.blog %}
+			{% for post in site.categories.news %}
 				{% if post.author %}
 					{% if member.title == post.author %}
 						<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>

@@ -3,6 +3,7 @@ layout: member
 title: Floris Barthel
 position: Principal investigator
 handle: fpbarthel
+email: barthel@barthel-lab.com
 twitter: florisbarthel
 github: fpbarthel
 linkedin: florisbarthel

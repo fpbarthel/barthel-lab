@@ -116,6 +116,7 @@ categories:
 		<div class="feedbox pad-left">		
 			{% for position in site.categories.join limit:4 %}
 				<div class="note-title">
+					<i class="fa fa-arrow-circle-right"></i>
 					<a class="off" href="{{ position.url }}">
 						{{ position.title }}
 						{% if position.subtitle %}<i class="note">({{ position.subtitle }})</i>{% endif %}

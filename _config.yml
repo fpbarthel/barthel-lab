@@ -13,6 +13,9 @@ future: true
 sass:
   sass_dir: css
 
+kramdown:
+  parse_block_html: true
+
 plugins:
   - jekyll-sitemap
   - jekyll-feed
