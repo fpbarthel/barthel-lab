@@ -1,5 +1,7 @@
 # the barthel laboratory website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a2170c47-2efd-481b-ae19-a4243a1c3e0d/deploy-status)](https://app.netlify.com/sites/vigorous-shaw-05d168/deploys)
+
 This is the public Github repository for the [Barthel laboratory](https://www.barthel-lab.com/) website.
 
 The site borrows code from that of [Trevor Bedford](https://github.com/blab/blotter) deployed at [bedford.io](http://bedford.io). Elements of the design were adopted from the [Riggleman lab website](http://rrgroup.seas.upenn.edu/publications/) and the [Drummond Lab website](http://drummondlab.org/). Many thanks to [Samir Amin](https://sbamin.com/) for many tips and feedback while designing this site, including but not limited to adding Twitter Cards and Opengraph support. 
