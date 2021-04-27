@@ -5,7 +5,8 @@ category: trainee
 title: Postdoctoral Fellow
 subtitle: Tumor evolution
 image: /images/research/evolution.png
-jobid: 534970
+pdf: /pdfs/jobs/PD-TumorEvo.pdf
+jobid: 543317
 ---
 
 The Barthel laboratory is focused on unraveling the role of telomere dysfunction in glioma development and evolution. We employ computational biology, evolutionary genetics, functional genomics and molecular biology to map the ramifications of dysfunctional telomeres on glioma genomes. We are looking for a talented, passionate and highly motivated individual to enrich our team and study tumor evolution.
@@ -21,3 +22,6 @@ The ideal candidate will have a PhD in a relevant field and have experienced ana
 
 ### Location
 We are located at the Translational Genomics Institute (TGen) set to the backdrop of the stunning Sonoran Desert. The successful candidate will be a part of the Cancer and Cell Biology Division at TGen and will have numerous opportunities to work with our partners at the Neurosurgery Department of the Amsterdam UMC in The Netherlands and the Department of Computational and Quantitative Medicine (DCQM) at City of Hope (COH).
+
+### Application
+Please direct all questions to barthel<span style="display:none">obfuscate</span>@barthel-lab.com. Application via the "Apply" button on the left menu. Attach a letter describing your research interests and motivation to join our group. Include an academic CV detailing your past research experience, publication track record and (conference) presentations. We will start reviewing applications immediately and until the position is filled. 
