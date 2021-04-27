@@ -1,0 +1,17 @@
+---
+layout: error
+title: 404
+permalink: /404.html
+---
+<script>
+function my404path() {
+    var x = location.pathname;
+    document.getElementById("my404key").innerHTML = x;
+}
+window.onload=my404path;
+</script>
+<p>Sorry! The page you are looking for, <code class="highlighter-rouge">{{ site.url }}<span id="my404key"></span></code> does not exist on this website.</p>
+
+<p>If there is no typographical error, you can <a class="off" href="/team/floris-barthel/">contact me</a> to fix the broken link. Thanks!</p>
+
+<div class="hugespacer"></div>

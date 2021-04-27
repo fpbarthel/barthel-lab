@@ -50,7 +50,6 @@ exclude:
   - "*.tips"
   - "*.trees"
   - "*.tsv"
-  - "*.txt"
   - "*.zip"
   - "Gemfile"
   - "Gemfile.lock"

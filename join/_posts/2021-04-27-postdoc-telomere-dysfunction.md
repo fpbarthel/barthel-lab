@@ -4,7 +4,7 @@ status: open
 category: trainee
 title: Postdoctoral Fellow
 subtitle: Telomere dysfunction
-image: /images/research/telomere-dysfunction-bfb.png
+image: /images/research/telomere-dysfunction-bfb-whitebg.png
 pdf: /pdfs/jobs/PD-TeloDysf.pdf
 jobid: 543313
 ---

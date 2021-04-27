@@ -4,7 +4,7 @@ status: open
 category: trainee
 title: Postdoctoral Fellow
 subtitle: Tumor evolution
-image: /images/research/evolution.png
+image: /images/research/evolution-whitebg.png
 pdf: /pdfs/jobs/PD-TumorEvo.pdf
 jobid: 543317
 ---
