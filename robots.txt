@@ -1,2 +1,6 @@
 User-agent: *
-Disallow: /
+Disallow: /pdfs/
+Disallow: /css/
+Disallow: /js/
+
+Sitemap: https://www.barthel-lab.com/sitemap.xml

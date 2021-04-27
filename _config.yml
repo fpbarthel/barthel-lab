@@ -5,7 +5,9 @@ url: https://www.barthel-lab.com
 logo: /images/logo.png
 
 author:
+  name: Floris Barthel
   twitter: fpbarthel
+  linkedin: https://www.linkedin.com/in/florisbarthel/
 
 markdown: kramdown
 permalink: /:categories/:title/
@@ -53,3 +55,4 @@ exclude:
   - "*.zip"
   - "Gemfile"
   - "Gemfile.lock"
+  - "README.md"
