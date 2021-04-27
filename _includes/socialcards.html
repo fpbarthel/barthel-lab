@@ -1,5 +1,5 @@
 <!-- OpenGraph Cards -->
-<meta property="og:title" content="{% if page.title == site.title %}{{ page.title }} - {{ site.description }}{% else %}{{ page.title }} - {{ site.title }}{% endif %}">
+<meta property="og:title" content="{% if page.title == site.title %}{{ page.title }} - {{ site.description }}{% else %}{{ page.title }}{{% if page.subtitle %}} ({{ page.subtitle }}){{% endif %}} - {{ site.title }}{% endif %}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 
