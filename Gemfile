@@ -6,6 +6,9 @@ gem "jekyll", "4.2.0"
 # katex
 gem "execjs"
 
+## REXML
+gem "rexml", ">= 3.2.5"
+
 # octokit
 gem 'octokit'
 gem 'netrc'
