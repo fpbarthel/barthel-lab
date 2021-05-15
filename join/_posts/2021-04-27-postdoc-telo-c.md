@@ -4,7 +4,6 @@ status: open
 category: trainee
 title: Postdoctoral Fellow
 subtitle: 3D genomics
-image: /images/research/telo-c-whitebg.png
 pdf: /pdfs/jobs/PD-TeloC.pdf
 jobid: 543312
 ---

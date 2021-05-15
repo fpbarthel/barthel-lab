@@ -16,3 +16,4 @@ projects/
 # Other files
 .DS_Store
 .tweet-cache
+Gemfile.lock
