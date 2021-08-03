@@ -9,7 +9,7 @@ pdf:
 jobid: 606120
 ---
 
-The Barthel laboratory is focused on unraveling the role of telomere dysfunction in glioma development and evolution. We employ computational biology, evolutionary genetics, functional genomics and molecular biology to map the ramifications of dysfunctional telomeres on glioma genomes. We are looking for a talented, passionate and highly motivated individual to enrich our team and study tumor evolution.
+The Barthel laboratory is focused on unraveling the role of telomere dysfunction in glioma development and evolution. We employ computational biology, evolutionary genetics, functional genomics, and molecular biology to map the ramifications of dysfunctional telomeres on glioma genomes. We are looking for a talented, passionate, and highly motivated scientist to manage the wet lab activities of our group.
 
 ### Position Summary
 The scientist will carry out research in a molecular laboratory. Research may encompass hypothesis- or discovery-driven approaches to make genomic discoveries that may be translated to improve patient care and outcomes. Responsibilities include:

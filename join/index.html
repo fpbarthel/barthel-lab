@@ -12,14 +12,9 @@ categories:
     <p>
       We are always seeking creative and motivated individuals who are passionate about science to strengthen our team! In return we will provide you with a diverse, fun and collaborative research environment. You will have the opportunity to work on highly exciting questions in telomere dysfunction and glioma evolution while being at the forefront of innovation in science. The listed positions are meant to serve as guidelines and prospective candidates are encouraged to reach out to <a href="/team/floris-barthel/">Floris</a> directly with any questions.
     </p>
-    <p>
-      Read more about our <a href="/research/">research</a>.
-    </p>
   </div>
   <div class="col-md-1"></div>
 </div>
-
-<div class="bigspacer"></div>
 
 <div class="row">
   <div class="col-md-1"></div>
@@ -27,7 +22,18 @@ categories:
     <h2>Open positions</h2>
     <ul>
       {% for position in site.categories.join %}
+      {% if position.status == "open" %}
       <li><a href="{{ position.url }}" class="off">{{ position.title }} {% if position.subtitle %}({{ position.subtitle }}){% endif %}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+    <p>Read more about our <a href="/research/">research interests</a> and/or have a look at some recently filled positions to get an idea of the work currently being done in the lab:</p>
+    <h2>Closed positions</h2>
+    <ul>
+      {% for position in site.categories.join %}
+      {% if position.status == "closed" %}
+      <li><a href="{{ position.url }}" class="off">{{ position.title }} {% if position.subtitle %}({{ position.subtitle }}){% endif %}</a></li>
+      {% endif %}
       {% endfor %}
     </ul>
   </div>

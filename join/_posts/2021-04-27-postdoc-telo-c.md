@@ -1,6 +1,6 @@
 ---
 layout: job
-status: open
+status: closed
 category: trainee
 title: Postdoctoral Fellow
 subtitle: 3D genomics
