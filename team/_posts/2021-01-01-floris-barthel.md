@@ -1,5 +1,6 @@
 ---
 layout: member
+alumni: false
 title: Floris Barthel
 position: Principal investigator
 handle: fpbarthel

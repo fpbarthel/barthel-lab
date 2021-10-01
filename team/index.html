@@ -39,15 +39,15 @@ categories:
 {% endfor %}
 {% cycle 'close rows': '', '</div>', '</div>' %}
 
-<!--<div class="row">
+<div class="row">
 	<div class="col-lg-12">
 		<div class="title">
-			Past members
+			Alumni
 		</div>
 	</div>
 </div>
 
-<div class="bigspacer"></div>-->
+<div class="bigspacer"></div>
 
 {% for member in site.categories.team reversed %}
 	{% if member.alumni == true %}
@@ -61,7 +61,8 @@ categories:
   				-->
  			 	<div class="media-body">
     				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
+    				<p class="note">{{ member.position }}<br>
+    				{% if member.current %}Current: {{ member.current }}</p>{% endif %}
   				</div>
 			</div>
 			<div class="bigspacer"></div>
