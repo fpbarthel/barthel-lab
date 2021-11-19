@@ -3,7 +3,7 @@ layout: job
 status: open
 category: trainee
 title: Postdoctoral Fellow
-subtitle: Tumor evolution
+subtitle: Tumor Evolution & Liquid Biopsy
 image: /images/research/evolution-whitebg.png
 pdf: /pdfs/jobs/PD-TumorEvo-v2.pdf
 jobid: 543317
