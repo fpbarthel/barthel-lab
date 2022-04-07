@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Marisol Araiza
-alumni: false
+alumni: true
 position: Research Intern
 handle:
 email: 

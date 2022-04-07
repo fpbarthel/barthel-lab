@@ -1,8 +1,9 @@
 ---
 layout: member
 title: Shuvodeep De
-alumni: false
+alumni: true
 position: Postdoctoral Fellow
+current: Scientist at Oak Ridge National Laboratory
 handle:
 email: 
 twitter: 
