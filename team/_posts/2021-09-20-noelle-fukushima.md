@@ -2,8 +2,8 @@
 layout: member
 title: Noelle Fukushima
 alumni: false
-position: Research Assistant III
-handle:
+position: Research Associate III
+handle: noelle
 email: 
 twitter: 
 github: 
