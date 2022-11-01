@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Victoria Jimenez
-alumni: false
+alumni: true
 position: Helios Scholar
 handle:
 email: 

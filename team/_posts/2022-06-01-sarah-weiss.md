@@ -2,7 +2,7 @@
 layout: member
 title: Sarah Weiss
 alumni: false
-position: Helios Scholar
+position: Undergraduate Student
 handle:
 email: 
 twitter:

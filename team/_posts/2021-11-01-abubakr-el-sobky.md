@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Abubakr El Sobky
-alumni: false
+alumni: true
 position: Research Intern
 handle:
 email: 
