@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Sarah Weiss
-alumni: false
+alumni: true
 position: Undergraduate Student
 handle:
 email: 
