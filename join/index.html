@@ -22,10 +22,15 @@ categories:
     <h2>Open positions</h2>
     <ul>
       {% for position in site.categories.join %}
+      {% assign i = 0 %}
       {% if position.status == "open" %}
+      {% assign i = i | plus:1 %}
       <li><a href="{{ position.url }}" class="off">{{ position.title }} {% if position.subtitle %}({{ position.subtitle }}){% endif %}</a></li>
       {% endif %}
       {% endfor %}
+      {% if i == 0 %}
+      No open positions. Please enquire with Floris directly.
+      {% endif %}
     </ul>
     <p>Read more about our <a href="/research/">research interests</a> and/or have a look at some older job postings to get an idea of the work currently being done in the lab:</p>
     <h2>Closed positions</h2>

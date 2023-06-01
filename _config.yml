@@ -15,7 +15,7 @@ future: true
 sass:
   sass_dir: css
 
-last_modified_at: 2023-05-31
+last_modified_at: 2023-06-01
 
 kramdown:
   parse_block_html: true

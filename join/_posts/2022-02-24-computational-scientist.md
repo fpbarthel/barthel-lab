@@ -1,6 +1,6 @@
 ---
 layout: job
-status: open
+status: closed
 category: staff
 title: Computational Scientist
 subtitle:
