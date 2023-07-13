@@ -319,7 +319,15 @@ blockquote {
 }
 
 .memberbox {
+	vertical-align: middle;
+}
 
+img.photo {
+	object-fit: cover;
+	border-radius: 50%;
+	object-position: 10% 10%; 
+	width:150px;
+	height:150px;
 }
 
 .talkbox {
