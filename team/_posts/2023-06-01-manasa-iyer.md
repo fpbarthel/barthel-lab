@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Manasa Iyer
-alumni: false
+alumni: true
 position: Helios Scholar
 handle:
 email: 

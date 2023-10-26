@@ -21,14 +21,14 @@ categories:
   <div class="col-md-10">
     <h2>Open positions</h2>
     <ul>
+      {% capture _ %}{% increment i %}{% endcapture %}
       {% for position in site.categories.join %}
-      {% assign i = 0 %}
       {% if position.status == "open" %}
-      {% assign i = i | plus:1 %}
+      {% capture _ %}{% increment i %}{% endcapture %}
       <li><a href="{{ position.url }}" class="off">{{ position.title }} {% if position.subtitle %}({{ position.subtitle }}){% endif %}</a></li>
       {% endif %}
       {% endfor %}
-      {% if i == 0 %}
+      {% if i < 2 %}
       No open positions. Please enquire with <a href="/team/floris-barthel/">Floris</a>  directly.
       {% endif %}
     </ul>

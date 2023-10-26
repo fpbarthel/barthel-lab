@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Hersh Nanda
-alumni: false
+alumni: true
 position: Helios Scholar
 handle:
 email: 

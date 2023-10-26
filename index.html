@@ -18,8 +18,22 @@ categories:
 
 <div class="bigspacer"></div>
 
+{% capture _ %}{% increment n_positions %}{% endcapture %}
+{% for position in site.categories.join %}
+	{% if position.status == "open" %}
+		{% capture _ %}{% increment n_positions %}{% endcapture %}
+	{% endif %}
+{% endfor %}
+{% if n_positions > 1 %}
+	{% assign open_position = true %}
+	{% assign col_width = "col-md-4" %}
+{% else %}
+	{% assign open_position = false %}
+	{% assign col_width = "col-md-6" %}
+{% endif %}
+
 <div class="row">
-	<div class="col-md-6">
+	<div class="{{ col_width }}">
 		<div class="head">
 			<a class="off" href="/news/">News</a>
 		</div>
@@ -56,7 +70,7 @@ categories:
 		</div>
 		<div class="bigspacer"></div>		
 	</div>
-	<div class="col-md-6">
+	<div class="{{ col_width }}">
 		<div class="head">
 			<a class="off" href="/publications/">Publications</a>
 		</div>
@@ -95,7 +109,7 @@ categories:
 		</div>
 		<div class="bigspacer"></div>		
 	</div>
-	{% comment %}
+    {% if n_positions > 1 %}
 	<div class="col-md-4">
 		<div class="head">
 			<a class="off" href="/join/">Open positions</a>
@@ -123,7 +137,7 @@ categories:
 		</div>
 		<div class="bigspacer"></div>		
 	</div>
-	{% endcomment %}
+	{% endif %}
 </div>
 
 <div class="bigspacer"></div>
