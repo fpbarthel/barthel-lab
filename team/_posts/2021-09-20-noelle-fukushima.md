@@ -2,7 +2,7 @@
 layout: member
 title: Noelle Fukushima
 alumni: false
-position: Research Associate III
+position: Senior RA
 handle: noelle
 email: 
 twitter: 
