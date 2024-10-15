@@ -4,7 +4,7 @@ alumni: true
 current: 
 title: Ryan O'Hanrahan
 position: Undergraduate Student
-linkedin: 
+linkedin: ryanohanrahan
 image: /images/team/ryan-ohanrahan.jpg
 website: 
 ---

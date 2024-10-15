@@ -7,7 +7,7 @@ handle:
 email: 
 twitter:
 github:
-linkedin:
+linkedin: victoria-jimenez583543222
 scholar: 
 image: /images/team/victoria-jimenez.jpeg
 cv:

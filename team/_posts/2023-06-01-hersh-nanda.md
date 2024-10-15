@@ -7,7 +7,7 @@ handle:
 email: 
 twitter:
 github:
-linkedin:
+linkedin: hersh-nanda-315443169
 scholar: 
 image: /images/team/hersh-nanda.jpg
 cv:
