@@ -3,6 +3,7 @@ layout: member
 status: current
 title: Maria Kyriakidou
 position: Postdoctoral Fellow
+alumni: true
 handle:
 email: 
 twitter: mariaiscurious
