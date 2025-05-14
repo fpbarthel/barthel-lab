@@ -4,7 +4,7 @@ title: Rebecca Reiman
 alumni: true
 position: Lab Manager
 handle: rreiman
-email: rreiman@tgen.org
+email: 
 twitter: 
 github: 
 linkedin: 
