@@ -6,6 +6,16 @@ categories:
 image: /images/research/telomere-dysfunction-bfb.png
 ---
 
+<style>
+.row .col-md-6 p,
+.row .col-md-10 p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+</style>
+
 <div class="row">
 	<div class="col-md-1"></div>
 	<div class="col-md-10">
@@ -17,34 +27,25 @@ image: /images/research/telomere-dysfunction-bfb.png
 
 <div class="row">
 	<div class="col-md-1"></div>
-	<div class="col-md-10">
+	<div class="col-md-6">
 		<p>
-		The overarching goal of the laboratory is to unravel the role of telomere dysfunction in gliomagenesis and evolution. While the biochemistry of telomere dysfunction has been defined at a high resolution, little is known about its broader impact on tumor genomes and role in tumorigenesis and evolution. The laboratory will map the full ramifications of telomere dysfunction on glioma genomes, both as a tumor suppressor by promoting genomic instability, and as an oncogene by facilitating tumorigenic mutations. To achieve these goals, we employ custom next-generation genomics technologies (whole genome, long read, chromatin capture and single-cell sequencing) on rigorously engineered model systems and patient samples.
+		The Barthel Laboratory studies how genome instability shapes cancer, with a particular focus on telomere dysfunction and its consequences for the structure and evolution of brain tumors. We combine cytogenetics and molecular biology with long-read sequencing, 3D-genome assays, and computational genomics to resolve regions of the cancer genome that conventional pipelines miss.
+		</p>
+		<p class="text-figure-legend">
+			<b>Figure 1. Tumor phylogenetic trees (ancestry trees) linking multiple samples from three distinct gliomas projected into its original spatial context and onto a reference brain space.</b> Samples from each tumor are shown by labeled points and the phylogeny (ancestry tree) was transformed in phylomorphospace using the sample coordinates as parameters. Lines represent phylogenetic (ancestral) relationships between samples. Tumor volumes are indicated by the gold (FLAIR) and orange-red (T1+Gado) overlays. Subcortical structures are shown as colored volumes. A reference brain volume (Montreal Neurological Institute) is shown in gray.
 		</p>
 	</div>
-	<div class="col-md-1"></div>
-</div>
-
-<div class="row">
-	<div class="col-md-1"></div>
-	<div class="col-md-10">
-		<div class="video-container">
-			<video id="video-res" width="100%" height="100%" class="video-fluid z-depth-1" autoplay muted playsinline>
-				<source src="/images/research/3d-phylo-brain.m4v" type="video/mp4"/>
-			</video>
-			
-			<script>
-	        var myVideo = document.getElementById('video-res');
-	    	myVideo.addEventListener('ended', function () {    
-	            this.load();
-	            this.play();
-	        }, false);
-			</script>
-
-			<p class="text-figure-legend">
-				<b>Figure 1. Tumor phylogenetic trees (ancestry trees) linking multiple samples from three distinct gliomas projected into its original spatial context and onto a reference brain space.</b> Samples from each tumor are shown by labeled points and the phylogeny (ancestry tree) was transformed in phylomorphospace using the sample coordinates as parameters. Lines represent phylogenetic (ancestral) relationships between samples. Tumor volumes are indicated by the gold (FLAIR) and orange-red (T1+Gado) overlays. Subcortical structures are shown as colored volumes. A reference brain volume (Montreal Neurological Institute) is shown in gray.
-			</p>
-		</div>
+	<div class="col-md-4">
+		<video id="video-res" width="100%" height="100%" class="video-fluid z-depth-1" autoplay muted playsinline>
+			<source src="/images/research/3d-phylo-brain.m4v" type="video/mp4"/>
+		</video>
+		<script>
+        var myVideo = document.getElementById('video-res');
+    	myVideo.addEventListener('ended', function () {
+            this.load();
+            this.play();
+        }, false);
+		</script>
 	</div>
 	<div class="col-md-1"></div>
 </div>
@@ -62,7 +63,7 @@ image: /images/research/telomere-dysfunction-bfb.png
 <div class="row">
 	<div class="col-md-1"></div>
 	<div class="col-md-10">
-		<h2>Genomic dissection of structural mutations following telomere dysfunction in glioma</h2>
+		<h2>Telomere dysfunction and structural genome evolution</h2>
 	</div>
 	<div class="col-md-1"></div>
 </div>
@@ -70,11 +71,11 @@ image: /images/research/telomere-dysfunction-bfb.png
 <div class="row">
 	<div class="col-md-1"></div>
 	<div class="col-md-6">
-		<p >
-	Glioma genomes are littered with somatic structural variants, but the mutational processes that give rise to these events are poorly understood. Repetitive DNA elements called telomeres make up chromosome termini. Their function, mediated by the protein complex shelterin, is to prevent endogenous DNA repair processes from engaging in the same manner that they would engage double strand breaks. Dysfunctional telomeres lack this end-protection and become hotspots for structural variation. We hypothesize that telomere dysfunction gives rise to some of the characteristic variation observed in glioma. Our lab is using long and short-read sequencing to dissect the structural genomic signatures of artificially induced and spontaneous telomere dysfunction in isogenic cell line models. We are extrapolating these patterns to publicly available sequencing datasets. Disentangling the vast landscape of structural mutations in glioma and reconstructing their origin will revise our conceptual understanding on the origin of disease.
+		<p>
+		Cells that lose telomere protection acquire structural variants, including breakage-fusion-bridge cycles and chromothriptic rearrangements. Funded through the DOD CDMRP Career Development Scholar Award (HT9425-23-1-0844), we map these signatures in cell-based glioblastoma models, both through shelterin disruption (artificially induced telomere dysfunction) and gradual telomere erosion (spontaneous dysfunction), and are developing computational algorithms to detect equivalent patterns in patient tumor sequencing. Recent work shows that telomere dysfunction in <a href="/publications/telomere-dysfunction-in-human-astrocytes-drives-acrocentric/">normal human astrocytes (Mbegbu et al., 2026)</a> drives acrocentric chromosome instability, with related findings on arm-specific telomere length in <a href="/publications/chromosome-arm-specific-telomere-length-governs-dual-modes-o/">IDH-mutant astrocytoma (Jehangir et al., 2026)</a>.
 		</p>
 		<p class="text-figure-legend">
-			<b>Figure 2. Genomic instability related to telomere dysfunction. a.</b> Schematic illustrating BFB-cycles. Following a single BFB-cycle, daughter cells are left with unequal DNA content, leading to unequal seggregation of genetic material. BFB-cycles may also involve fusion of non-sister telomeres (not shown). <b>b.</b> Successive BFB-cycles may form DNA palindromes demonstrating high intra-segmental homology. This can lead to intra-chromosomal fusions and formation of double minutes. <b>c.</b> Telomere dysfunction has also been linked to chromotripsis and following this phenomenon DNA segments can be rearranged, lost or circularized. DDR = DNA damage response; BFB = breakage-fusion-bridge
+			<b>Figure 2. Genomic instability related to telomere dysfunction. a.</b> Schematic illustrating BFB-cycles. Following a single BFB-cycle, daughter cells are left with unequal DNA content, leading to unequal seggregation of genetic material. BFB-cycles may also involve fusion of non-sister telomeres (not shown). <b>b.</b> Successive BFB-cycles may form DNA palindromes demonstrating high intra-segmental homology. This can lead to intra-chromosomal fusions and formation of double minutes. <b>c.</b> Telomere dysfunction has also been linked to chromothripsis and following this phenomenon DNA segments can be rearranged, lost or circularized. DDR = DNA damage response; BFB = breakage-fusion-bridge.
 		</p>
 	</div>
 	<div class="col-md-4">
@@ -88,7 +89,7 @@ image: /images/research/telomere-dysfunction-bfb.png
 <div class="row">
 	<div class="col-md-1"></div>
 	<div class="col-md-10">
-		<h2>Reconstructing evolutionary trajectories of glioma</h2>
+		<h2>Telomeres in 3D: chromatin structure around repetitive elements</h2>
 	</div>
 	<div class="col-md-1"></div>
 </div>
@@ -96,15 +97,15 @@ image: /images/research/telomere-dysfunction-bfb.png
 <div class="row">
 	<div class="col-md-1"></div>
 	<div class="col-md-6">
-		<p >
-		Sustained telomere dysfunction drives tumor genomes to the brink of destruction. Yet somehow cancer genomes seem to thrive under these catastrophic conditions. Tumor development can be thought of as an evolutionary process. Advantagous cellular changes promoting fitness are under selection to survive, whereas cellular lineages acquiring disadvantageous change rapidly become extinct. Using deep DNA and single-cell sequencing we study telomere dysfunction through the lens of evolution, piecing together distinct cellular lineages and temporally arranging genomic variation that arises from telomere dysfunction and other mutational processes. In reconstructing the evolutionary trajectories of tumorigenesis and progression we aim to identify targetable evolutionary bottlenecks and therapeutic vulnerabilties.
-		</p>
-		<p class="text-figure-legend">
-			<b>Figure 3. Clonal evolution (selection) and neutral evolution (drift) both contribute to glioma development.</b> Variation due to telomere dysfunction may fit either category. 
+		<p>
+		Interphase telomeres make long-range chromatin contacts across the rest of the genome. We developed <a href="/publications/Telomere-C/">Telomere-C (Chen et al., 2025)</a>, a targeted Hi-C variant that enriches for telomeric contacts, and showed that the telomeric 3D interactome is anchored primarily at repetitive element hubs, including interstitial telomeric sequences (ITS), telomere-associated repeat 1 (TAR1), and D20S16 elements, with the D20S16 interaction uniquely enriched in cancer cells that use the alternative lengthening of telomeres (ALT) pathway. In a complementary line of work, telomere dysfunction in <a href="/publications/telomere-dysfunction-in-human-astrocytes-drives-acrocentric/">normal human astrocytes (Mbegbu et al., 2026)</a> drives acrocentric chromosome instability and nucleolar reorganization, pointing to a mechanistic link between telomere maintenance and nucleolar structure.
 		</p>
 	</div>
 	<div class="col-md-4">
-		<img src="/images/research/evolution.png"/>
+		<img src="/publications/data/telomere-c.png"/>
+		<p class="text-figure-legend">
+			<b>Figure 3. Telomere-C maps the telomeric 3D interactome.</b> Telomere-C enriches for long-range chromatin contacts anchored at telomeres and reveals that the telomeric 3D interactome is dominated by ultra-long-range contacts with repetitive element hubs, including ITS, TAR1, and D20S16 elements.
+		</p>
 	</div>
 	<div class="col-md-1"></div>
 </div>
@@ -114,18 +115,77 @@ image: /images/research/telomere-dysfunction-bfb.png
 <div class="row">
 	<div class="col-md-1"></div>
 	<div class="col-md-10">
-		<h2>Defining the regulatory landscape of functional and dysfunctional telomeric chromatin interactions</h2>
+		<h2>Computational genomics for the structurally complex genome</h2>
 	</div>
 	<div class="col-md-1"></div>
 </div>
 
 <div class="row">
 	<div class="col-md-1"></div>
-	<div class="col-md-10">
+	<div class="col-md-6">
 		<p>
-		Interphase telomeres form long-range chromatin interactions with other elements of the genome, but it is unclear what purpose these interactions serve. It was shown that telomeric sequences repress the transcription of nearby genes in a phenomenon known as the “telomere position effect”. Moreover, distal elements called “enhancers” can interact with a gene’s proximal promoter to regulate its transcription. Our laboratory is investigating whether telomeric chromatin interactions can interfere with enhancer-promoter interactions to play a hand in transcriptional regulation. We have developed a telomere interaction assay called “Telomere-C” to identify interactions between telomeres and the rest of the genome. Through employing Telomere-C in tightly controlled cellular systems, we will resolve whether telomeric chromatin interactions can control transcriptional permissiveness.
+		Centromeres, telomeres, and acrocentric short arms remain difficult to analyze with standard alignment-based pipelines, even on complete (T2T) assemblies. <a href="/publications/karyoscope-rapid-alignment-free-sequence-annotation-for-the/">KaryoScope (Ranallo-Benavidez et al., 2026)</a> is our alignment-free annotation tool that uses k-mer feature databases to generate karyotype-level annotations of human genomes in minutes. We applied it across the Human Pangenome Reference Consortium to catalog D4Z4 array diversity, centromere-scale variation, and Robertsonian translocation substrates; the same framework is used on diploid reference assemblies (<a href="/publications/BJ-IMR90-assembly/">BJ and IMR-90, NAR 2026</a>) and cancer genomes (<a href="/publications/a-complete-human-pancreatic-cancer-genome/">HG008, Wagner et al., 2026</a>).
 		</p>
+		<p class="text-figure-legend">
+			<b>Figure 4. KaryoScope karyogram of HG002.</b> Computational karyogram of a complete diploid human genome generated alignment-free by KaryoScope, with annotations for repeat families, satellite arrays, centromeric structures, and chromosome-end organization.
+		</p>
+	</div>
+	<div class="col-md-4">
+		<img src="/images/research/karyoscope-hg002.png"/>
 	</div>
 	<div class="col-md-1"></div>
 </div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+		<h2>Liquid biopsies for longitudinal monitoring of cancer</h2>
+	</div>
+	<div class="col-md-1"></div>
+</div>
+
+<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-6">
+		<p>
+		Tumors that are difficult to repeatedly sample, particularly glioma, benefit from cell-free DNA (cfDNA) monitoring of blood, cerebrospinal fluid, and other body fluids. Our cfDNA program combines shallow whole-genome sequencing with targeted panels, methylation profiling, fragmentomics, and mitochondrial-genome analysis to detect tumor-derived signal in CSF and plasma. Current applications include longitudinal CSF cfDNA monitoring of IL13R&alpha;2 CAR-T therapy and PI3K-pathway resistance in glioblastoma (ABRC), and cfDNA monitoring within a CIRM-funded Phase I trial of neural stem cell-based oncolytic virotherapy. We also use in vitro host co-culture systems to evaluate cfDNA dynamics under chemotherapy (<a href="/publications/cfDNA-GBM-cell-culture/">Mankame et al., 2025</a>).
+		</p>
+		<p class="text-figure-legend">
+			<b>Figure 5. Cell-free DNA program across models and patient cohorts.</b> Schematic of cfDNA collection (cerebrospinal fluid, plasma, tumor fluid) across cell lines, PDX models, and glioma patients, with study aims spanning tumor burden tracking, evolution monitoring, and treatment response assessment.
+		</p>
+	</div>
+	<div class="col-md-4">
+		<img src="/images/research/cfdna-overview.png" style="width: 70%;"/>
+	</div>
+	<div class="col-md-1"></div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+		<h2>Multi-sample and post-mortem strategies for studying glioma evolution</h2>
+	</div>
+	<div class="col-md-1"></div>
+</div>
+
+<div class="row">
+	<div class="col-md-1"></div>
+	<div class="col-md-6">
+		<p>
+		Most longitudinal glioma cohorts collect one or two samples per tumor, which limits what can be inferred about spatial-clonal architecture and treatment-driven evolution. Through the <b>FRONTIER project</b>, we collect MRI-mapped, pre-craniotomy multisector biopsies in IDH-wildtype and IDH-mutant glioma, paired with spatial transcriptomics and agent-based spatiotemporal modeling of glioma cell-state distributions (OPC-, APC-, and NPC-like); <a href="/publications/neurooncol-spatial-DNAm/">Verburg et al., 2021</a> is the methodological precedent for the sampling protocol. The <b>LEGACY rapid-autopsy program</b> is a complementary effort to collect post-mortem tissue from glioma patients at &lt;6-hour post-mortem interval, providing matched terminal-disease specimens not represented in standard biobanks.
+		</p>
+		<p class="text-figure-legend">
+			<b>Figure 6. Multi-sector sampling across spatially distinct regions of a single tumor.</b> Image-guided pre-craniotomy biopsies preserve MRI coordinates without brain shift, enabling reconstruction of spatial-clonal architecture across the tumor and adjacent infiltrated brain.
+		</p>
+	</div>
+	<div class="col-md-4">
+		<img src="/images/research/multi-sector.png" style="width: 70%;"/>
+	</div>
+	<div class="col-md-1"></div>
+</div>
+
 <div class="bigspacer"></div>
