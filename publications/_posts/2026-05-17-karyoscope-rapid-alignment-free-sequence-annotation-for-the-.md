@@ -6,6 +6,7 @@ authors: T. Rhyker Ranallo-Benavidez, Yi-An Chen, Tamara Potapova, Jarno Alanko,
 year: 2026
 ref: Ranallo-Benavidez et al. 2026. bioRxiv.
 journal: bioRxiv. 2026
+pdf: /publications/data/KaryoScope-05242026.pdf
 doi: 10.64898/2026.05.15.725544
 ---
 
