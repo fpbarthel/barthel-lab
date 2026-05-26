@@ -5,10 +5,11 @@ gem "jekyll", "4.2.0"
 
 gem "ffi", "< 1.17.0"
 
-# csv was extracted from Ruby's default library in 3.4+. Without this
-# explicit declaration, Jekyll 4.2 raises a LoadError on Netlify
-# (which uses Ruby 3.4) when starting up.
+# Stdlib gems extracted from Ruby's default library in 3.4+. Without
+# these explicit declarations, Jekyll 4.2 (and its safe_yaml dependency)
+# raise a LoadError on Netlify when starting up.
 gem "csv"
+gem "base64"
 
 # katex
 gem "execjs"
