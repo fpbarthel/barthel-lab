@@ -158,24 +158,13 @@ layout: default
 			{{ content }}
 		</div>
 
-		{% assign lastname = member.title | split: ' ' | last %}
-		{% assign firstinitial = member.title | split: ' ' | first | slice: 0 %}
-		{% assign searchstring = lastname | append: ' ' | append: firstinitial %}
-
-		{% for paper in site.categories.publications %}
-		{% if paper.authors contains searchstring %}
-		{% assign papersq = true %}
-		{% endif %}
-		{% endfor %}
-
-		{% if papersq == true %}
+		{% assign mypapers = member | publications_for_member %}
+		{% if mypapers.size > 0 %}
 		<div class="bigspacer"></div>
 		<div class="head">Papers</div>
 		<div class="spacer"></div>
-		{% for paper in site.categories.publications %}
-		{% if paper.authors contains searchstring %}
-		<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a>
-		{% endif %}
+		{% for paper in mypapers %}
+		<p><a href="{{ paper.url }}" class="off">{{ paper.title }}</a> <span class="note">{{ paper.ref }}</span>
 		{% endfor %}
 		{% endif %}
 

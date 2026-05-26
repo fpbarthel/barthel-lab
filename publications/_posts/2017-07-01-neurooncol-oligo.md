@@ -2,7 +2,7 @@
 layout: paper
 title: Multigene signature for predicting prognosis of patients with 1p19q co-deletion diffuse glioma
 image: /publications/data/2017_NO_predict-oligo.jpeg
-authors: Hu X, Martinez-Ledesma E, Zheng S, Kim H, Barthel F, Jiang T, Hess KR, Verhaak RGW
+authors: Xin Hu, Emmanuel Martinez-Ledesma, Siyuan Zheng, Hoon Kim, Floris Barthel, Tao Jiang, Kenneth R Hess, Roel GW Verhaak
 year: 2017
 ref: Hu et al. 2017. Neuro Oncol.
 journal: "Neuro Oncol. 2017 Jun 1;19(6):786-795"
@@ -12,7 +12,7 @@ pmid: 28340142
 pmcid: PMC5464432
 ---
 
-# Abstract
+## Abstract
 
 **Background:** Co-deletion of 1p and 19q marks a diffuse glioma subtype associated with relatively favorable overall survival; however, heterogeneous clinical outcomes are observed within this category.
 

@@ -1,16 +1,17 @@
 ---
 layout: member
-title: Sharvari Mankame
 alumni: false
+title: Sharvari Mankame
 position: Graduate Student
-handle:
+linkedin: 
+github: SharvariMankame
+image: /images/team/sharvari-mankame-resized.jpeg
+website: 
+handle: 
 email: 
 twitter: SharvariMankame
-github:
-linkedin:
 scholar: 
-image: /images/team/sharvari-mankame-resized.jpeg
-cv:
+cv: 
 ---
 
 I am a PhD student at the Molecular and Cellular Biology program at Arizona State University. I graduated from Rutgers University – New Brunswick with a double major in Biological Sciences and Psychology in May 2020. My previous research at the Pierce Lab at the Brain Health Institute in Piscataway NJ studied the neuronal and epigenetic mechanisms behind prolonged psychostimulant use.

@@ -3,8 +3,9 @@ layout: member
 alumni: false
 current: 
 title: Shea Gallus
-position: Visiting Scientist
-linkedin:
+position: Clinical Fellow
+linkedin: 
+github: 
 image: /images/team/shea-gallus.jpg
 website: 
 ---

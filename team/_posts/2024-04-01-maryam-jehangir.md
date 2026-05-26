@@ -1,16 +1,17 @@
 ---
 layout: member
-title: Maryam Jehangir
 alumni: false
+title: Maryam Jehangir
 position: Postdoctoral Fellow
+linkedin: maryam-jehangir-1b3098130
+github: Maryamjehangir77
+image: /images/team/maryam-jehangir.jpeg
+website: 
 handle: maryam
 email: 
 twitter: UnespJehangir
-github: Maryamjehangir77
-linkedin: 
 scholar: z8xohhkAAAAJ
-image: /images/team/maryam-jehangir.jpeg
-cv:
+cv: 
 ---
 
 As a postdoctoral fellow at Barthel Lab, my research centers on identifying genomic structural rearrangements and variants associated with disease development and genome instability. Before joining this position, my research focused on studying the origin and evolution of supernumerary chromosomes using genome sequencing and assembly techniques.

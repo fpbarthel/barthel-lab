@@ -1,16 +1,17 @@
 ---
 layout: member
-title: Abubakr El Sobky
 alumni: true
-position: Research Intern
-handle:
+title: Abubakr El Sobky
+position: Undergraduate Student
+linkedin: abubakr-el-sobky-7378221a6
+github: aelsobky
+image: /images/team/abubakr-el-sobky.jpg
+website: 
+handle: 
 email: 
 twitter: abubakr_elsobky
-github: aelsobky
-linkedin: abubakr-el-sobky-7378221a6
 scholar: 
-image: /images/team/abubakr-el-sobky.jpg
-cv:
+cv: 
 ---
 
 I am currently a rising junior on the premedical track at Connecticut College and a Computational Biology and Bioinformatics major. As an aspiring physician-scientist, I am eager to capitalize on novel computational techniques to address biological challenges with the aim of improving human health. Last year, I worked as a research intern with Dr. Sahar Al Seesi at Southern Connecticut State University, where I utilized machine learning techniques to tackle address bias against underrepresented U12-intron subtypes in current genome annotations.

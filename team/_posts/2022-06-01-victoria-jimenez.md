@@ -1,16 +1,17 @@
 ---
 layout: member
-title: Victoria Jimenez
 alumni: true
-position: Helios Scholar
-handle:
-email: 
-twitter:
-github:
+title: Victoria Jimenez
+position: Undergraduate Student
 linkedin: victoria-jimenez583543222
-scholar: 
+github: 
 image: /images/team/victoria-jimenez.jpeg
-cv:
+website: 
+handle: 
+email: 
+twitter: 
+scholar: 
+cv: 
 ---
 
 I am currently a junior at the University of Southern California, majoring in biomedical engineering with an electrical emphasis. On campus I am involved in engineering organizations such as Women in Engineering, as well as coding programs to integrate in my studies. Currently, I am working on my scribe certification and EMT license, with plans to attend medical school after my undergraduate studies. My goal is to pursue a career combining engineering and medicine to study Alzheimer’s, as well as other diseases.

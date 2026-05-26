@@ -1,16 +1,17 @@
 ---
 layout: member
-title: Noelle Fukushima
 alumni: false
-position: Senior RA
+title: Noelle Fukushima
+position: Senior Research Associate
+linkedin: 
+github: 
+image: /images/team/noelle-fukushima.jpg
+website: 
 handle: noelle
 email: 
 twitter: 
-github: 
-linkedin: 
 scholar: 
-image: /images/team/noelle-fukushima.jpg
-cv:
+cv: 
 ---
 
 Since receiving my BA from UC Santa Cruz and my MS from the University of Utah, I have worked in academic, biotech, pharma, and health care settings doing everything from assay development for diagnostic instruments to high throughput screening of small molecules for drug discovery. I am excited to use these skills to help the Barthel Lab better understand glioma biology.
