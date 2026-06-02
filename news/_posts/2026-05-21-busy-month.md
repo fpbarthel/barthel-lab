@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Four new manuscripts from the lab
-tag: [Floris Barthel]
+tag: [Floris Barthel, Maryam Jehangir, T. Rhyker Ranallo-Benavidez, Mimi Mbegbu, Yi-An Chen]
 ---
 
 Four new manuscripts from the lab have been posted online:
