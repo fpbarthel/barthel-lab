@@ -1,0 +1,22 @@
+{%- comment -%}
+Renders "Tagged: <linked names>" for a post.
+Pass the item via include.item (e.g. {% include tag-list.html item=page %}).
+{%- endcomment -%}
+{%- assign item = include.item -%}
+{%- if item.tag and item.tag.size > 0 -%}
+<div class="note">
+Tagged:
+{% for person in item.tag -%}
+  {%- assign person_url = '' -%}
+  {%- for member in site.categories.team -%}
+    {%- if member.title == person -%}{%- assign person_url = member.url -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if person_url != '' -%}
+    <a class="off" href="{{ person_url }}">{{ person }}</a>
+  {%- else -%}
+    {{ person }}
+  {%- endif -%}
+  {%- unless forloop.last -%}, {% endunless -%}
+{%- endfor %}
+</div>
+{%- endif -%}

@@ -2,7 +2,6 @@
 layout: post
 title: Four new manuscripts from the lab
 tag: [Floris Barthel]
-handle: fpbarthel
 ---
 
 Four new manuscripts from the lab have been posted online:

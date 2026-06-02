@@ -2,7 +2,6 @@
 layout: post
 title: Lab at ASHG 2025
 tag: [Floris Barthel, Yi-An Chen, Yue Hao, Mimi Mbegbu, T. Rhyker Ranallo-Benavidez, Sharvari Mankame, Maryam Jehangir]
-handle: fpbarthel
 ---
 
 The lab traveled to Boston, MA for the [American Society of Human Genetics Annual Meeting](https://www.ashg.org/meetings/2025meeting/) (October 14–18, 2025), with a platform talk and four posters:

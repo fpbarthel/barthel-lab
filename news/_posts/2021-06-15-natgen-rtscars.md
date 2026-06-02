@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Genomics of Cancer Radiotherapy published in Nature Genetics!
-author: Floris Barthel
-handle: fpbarthel
+tag: [Floris Barthel]
 ---
 
 Very happy to announce the publication of our work on the genomic effects of radiotherapy on cancer genomes!

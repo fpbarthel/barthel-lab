@@ -1,8 +1,7 @@
 ---
 layout: post
 title: First day at the new lab
-author: Floris Barthel
-handle: fpbarthel
+tag: [Floris Barthel]
 ---
 
 First day at the new lab today! Here are photos of my new office and lab space:

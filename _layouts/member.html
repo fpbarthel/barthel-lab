@@ -168,42 +168,24 @@ layout: default
 		{% endfor %}
 		{% endif %}
 
-		{% for post in site.categories.news %}
-			{% if post.author %}
-				{% if member.title == post.author %}
-					{% assign postsq = true %}
-				{% endif %}
-			{% endif %}
-			{% if post.authors %}
-				{% for author in post.authors %}
-					{% if member.title == author %}
-						{% assign postsq = true %}
+		{% assign published_news = site.categories.news | where_exp: "post", "post.date <= site.time" %}
+		{% assign my_news = "" | split: "" %}
+		{% for post in published_news %}
+			{% if post.tag %}
+				{% for name in post.tag %}
+					{% if name == member.title %}
+						{% assign my_news = my_news | push: post %}
 					{% endif %}
 				{% endfor %}
 			{% endif %}
 		{% endfor %}
 
-		{% if postsq == true %}
+		{% if my_news.size > 0 %}
 			<div class="bigspacer"></div>
 			<div class="head">News</div>
 			<div class="spacer"></div>
-			{% for post in site.categories.news %}
-				{% if post.author %}
-					{% if member.title == post.author %}
-						<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
-					{% endif %}
-				{% endif %}
-				{% if post.authors %}
-					{% assign found = false %}
-					{% for author in post.authors %}
-						{% if member.title == author %}
-							{% assign found = true %}
-						{% endif %}
-					{% endfor %}
-					{% if found %}
-						<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
-					{% endif %}
-				{% endif %}
+			{% for post in my_news %}
+				<p><a href="{{ post.url }}" class="off">{{ post.title }}</a>
 			{% endfor %}
 		{% endif %}
 

@@ -67,6 +67,7 @@ category: news
 				<div class="post">
 					{{ post.content | link_member_names }}
 				</div>
+				{% include tag-list.html item=post %}
 			</div>
 			<div class="col-lg-1"></div>
 		</div>

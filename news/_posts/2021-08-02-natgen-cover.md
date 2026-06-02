@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Featured on the cover of Nature Genetics
-author: Floris Barthel
-handle: fpbarthel
+tag: [Floris Barthel]
 ---
 
 Nice to see that the editors at Nature Genetics have decided to feature our paper on genomic signatures of cancer radiotherapy on the cover!
