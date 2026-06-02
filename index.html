@@ -39,14 +39,9 @@ categories:
 		</div>
 		<div class="bigspacer"></div>
 		<div class="feedbox pad-left">
-			{% for news in site.categories.news limit:4 %}
-			
-				{% for member in site.categories.team %}
-					{% if member.title == news.author %}
-						{% assign author = member %}
-					{% endif %}
-				{% endfor %}		
-				
+			{% assign published_news = site.categories.news | where_exp: "post", "post.date <= site.time" %}
+			{% for news in published_news limit:4 %}
+
 				<div class="note-title">
 					<i class="fa fa-bullhorn fa-fw"></i>
 					<a class="off" href="{{ news.url }}">
@@ -54,18 +49,15 @@ categories:
 					</a>
 				</div>
 				<div class="note">
-					{{ news.excerpt | remove: '<p>' | remove: '</p>' }}
+					{{ news.excerpt | remove: '<p>' | remove: '</p>' | link_member_names }}
 				</div>
 				<div class="smallspacer"></div>
 				<div class="smallnote">
 					Posted
 					{{ news.date | date_to_string }}
-					{% if author %}
-					by <a class="off" href="{{ author.url }}">{{ author.title }}</a>
-					{% endif %}						
 				</div>
-				<div class="spacer"></div>	
-				<div class="spacer"></div>				
+				<div class="spacer"></div>
+				<div class="spacer"></div>
 			{% endfor %}
 		</div>
 		<div class="bigspacer"></div>		

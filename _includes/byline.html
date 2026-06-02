@@ -1,0 +1,32 @@
+{%- comment -%}
+Renders "by <linked names>" for a post.
+Pass the item via include.item (e.g. {% include byline.html item=page %}).
+Preferred front matter: `tag: [Full Name, Full Name, ...]` — names are matched
+against team-member `title` and linked to their profile.
+Falls back to legacy `author` (single) or `authors` (list) front matter.
+{%- endcomment -%}
+{%- assign item = include.item -%}
+{%- if item.tag -%}
+by
+{% for person in item.tag -%}
+  {%- assign person_url = '' -%}
+  {%- for member in site.categories.team -%}
+    {%- if member.title == person -%}{%- assign person_url = member.url -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if person_url != '' -%}
+    <a class="off" href="{{ person_url }}">{{ person }}</a>
+  {%- else -%}
+    {{ person }}
+  {%- endif -%}
+  {%- unless forloop.last -%}
+    {%- if forloop.rindex == 2 %} and {% else %}, {% endif -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- elsif item.author -%}
+by <a class="off" href="{% for member in site.categories.team %}{% if member.title == item.author %}{{ member.url }}{% endif %}{% endfor %}">{{ item.author }}</a>
+{%- elsif item.authors -%}
+by
+<a class="off" href="{% for member in site.categories.team %}{% if member.title == item.authors.first %}{{ member.url }}{% endif %}{% endfor %}">{{ item.authors.first }}</a>
+and
+<a class="off" href="{% for member in site.categories.team %}{% if member.title == item.authors.last %}{{ member.url }}{% endif %}{% endfor %}">{{ item.authors.last }}</a>
+{%- endif -%}

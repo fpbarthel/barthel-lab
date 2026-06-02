@@ -14,39 +14,6 @@ layout: default
 					<p>
 					<div class="smallhead">
 						{{ page.date | date: "%-d %b %Y" }}
-						{% if page.author %}
-						by <a class="off" href="
-							{% for member in site.categories.team %}
-								{% if member.title == page.author %}
-									{{ member.url }}
-								{% endif %}
-							{% endfor %}
-						">
-						{{ page.author }}
-						</a>
-						{% endif %}
-						{% if page.authors %}
-						by
-						<a class="off" href="
-							{% for member in site.categories.team %}
-								{% if member.title == page.authors.first %}
-									{{ member.url }}
-								{% endif %}
-							{% endfor %}
-						">
-						{{ page.authors.first }}
-						</a>
-						and
-						<a class="off" href="
-							{% for member in site.categories.team %}
-								{% if member.title == page.authors.last %}
-									{{ member.url }}
-								{% endif %}
-							{% endfor %}
-						">
-						{{ page.authors.last }}
-						</a>
-						{% endif %}
 					</div>
 				</div>
 			</div>
@@ -69,7 +36,7 @@ layout: default
 			{% endif %}
 			{% endif %}
 			<div class="post">
-				{{ content }}
+				{{ content | link_member_names }}
 			</div>
 		</div>
 		<div class="col-lg-1"></div>
