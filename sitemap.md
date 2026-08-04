@@ -11,6 +11,7 @@ categories:
 * [Research](/research)
 * [News](/news)
 * [Publications](/publications)
+* [Blog](/blog)
 * [Team](/team)
 * [About Us](/about)
 * [Join Us](/join)

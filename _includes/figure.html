@@ -1,0 +1,9 @@
+{%- comment -%}
+Figure with caption for blog posts. Emitted on a single line with markdown="0"
+because the site sets kramdown parse_block_html, which otherwise consumes the
+closing </figcaption></figure> tags and nests the rest of the post inside them.
+
+Usage:
+  {% include figure.html src="/blog/data/x.jpg" alt="..." caption="..." %}
+{%- endcomment -%}
+<figure markdown="0"><img src="{{ include.src }}" alt="{{ include.alt | escape }}"><figcaption>{{ include.caption }}</figcaption></figure>

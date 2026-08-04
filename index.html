@@ -26,10 +26,10 @@ categories:
 {% endfor %}
 {% if n_positions > 1 %}
 	{% assign open_position = true %}
-	{% assign col_width = "col-md-4" %}
+	{% assign col_width = "col-lg-3 col-md-6" %}
 {% else %}
 	{% assign open_position = false %}
-	{% assign col_width = "col-md-6" %}
+	{% assign col_width = "col-lg-4 col-md-6" %}
 {% endif %}
 
 <div class="row">
@@ -60,7 +60,36 @@ categories:
 				<div class="spacer"></div>
 			{% endfor %}
 		</div>
-		<div class="bigspacer"></div>		
+		<div class="bigspacer"></div>
+	</div>
+	<div class="{{ col_width }}">
+		<div class="head">
+			<a class="off" href="/blog/">Blog</a>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="feedbox pad-left">
+			{% assign published_blog = site.categories.blog | where_exp: "post", "post.date <= site.time" %}
+			{% for entry in published_blog limit:4 %}
+
+				<div class="note-title">
+					<i class="fa fa-pencil fa-fw"></i>
+					<a class="off" href="{{ entry.url }}">
+					{{ entry.title }}
+					</a>
+				</div>
+				<div class="note">
+					{{ entry.excerpt | strip_html | strip_newlines | truncate: 150 }}
+				</div>
+				<div class="smallspacer"></div>
+				<div class="smallnote">
+					Posted
+					{{ entry.date | date_to_string }}
+				</div>
+				<div class="spacer"></div>
+				<div class="spacer"></div>
+			{% endfor %}
+		</div>
+		<div class="bigspacer"></div>
 	</div>
 	<div class="{{ col_width }}">
 		<div class="head">
@@ -102,7 +131,7 @@ categories:
 		<div class="bigspacer"></div>		
 	</div>
     {% if n_positions > 1 %}
-	<div class="col-md-4">
+	<div class="{{ col_width }}">
 		<div class="head">
 			<a class="off" href="/join/">Open positions</a>
 		</div>

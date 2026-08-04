@@ -27,12 +27,13 @@ layout: default
 		<div class="col-lg-1"></div>
 		<div class="col-lg-10">
 			{% if page.image %}
+			{% assign image_alt = page.image_alt | default: page.title %}
 			{% if page.link %}
 			<a href="{{ page.link }}">
-				<img class="offset" src="{{ page.image }}">
+				<img class="offset" src="{{ page.image }}" alt="{{ image_alt | escape }}">
 			</a>
 			{% else %}
-			<img class="offset" src="{{ page.image }}">
+			<img class="offset" src="{{ page.image }}" alt="{{ image_alt | escape }}">
 			{% endif %}
 			{% endif %}
 			<div class="post">

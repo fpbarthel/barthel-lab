@@ -37,7 +37,7 @@
 			<div class="container">
 				{% if page.categories.first != 'home' %}
 				<a class="navbar-brand" href="/">
-					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logo.png">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logo.png" alt="">
 					barthel lab
 				</a>
 				{% else %}
@@ -69,6 +69,13 @@
 						<li class="nav-link">
 						{% endif %}
 						<a class="mx-1" href="/publications/">publications</a>
+						</li>
+						{% if page.categories.first == 'blog' %}
+						<li class="nav-link active">
+						{% else %}
+						<li class="nav-link">
+						{% endif %}
+						<a class="mx-1" href="/blog/">blog</a>
 						</li>
 						{% if page.categories.first == 'team' %}
 						<li class="nav-link active">

@@ -1,0 +1,84 @@
+---
+layout: default
+title: blog
+categories:
+ - blog
+category: blog
+---
+
+<div class="row">
+	<div class="col-lg-1"></div>
+	<div class="col-lg-10">
+		<div class="post">
+			<p>Longer-form write-ups of what comes out of the lab: what a preprint actually shows, why we built a tool the way we did, and what we are still working out. Each entry links to the thread we posted about it and to the paper itself.</p>
+		</div>
+		<div class="bigspacer"></div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+
+<div class="post-list">
+
+{% assign published_blog = site.categories.blog | where_exp: "post", "post.date <= site.time" %}
+{% for post in published_blog %}
+
+	<div class="blog-post">
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
+				<div class="media">
+					<div class="media-body">
+						<div class="title media-heading">
+							<a href="{{ post.url }}" class="off">{{ post.title }}</a>
+						</div>
+						<p>
+						<div class="smallhead">
+							{{ post.date | date: "%-d %b %Y" }}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-1"></div>
+		</div>
+
+		<div class="bigspacer"></div>
+
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
+				{% if post.image %}
+				<a href="{{ post.url }}">
+					<img class="blog-thumb" src="{{ post.image }}" alt="{{ post.image_alt | default: post.title | escape }}">
+				</a>
+				{% endif %}
+				<div class="post">
+					{{ post.excerpt | link_member_names }}
+					<p><a class="off" href="{{ post.url }}">Read the full post <i class="fa fa-chevron-right fa-fw"></i></a></p>
+				</div>
+				{% include tag-list.html item=post %}
+			</div>
+			<div class="col-lg-1"></div>
+		</div>
+
+		<div class="bigspacer"></div>
+		<div class="spacer"></div>
+
+	</div>
+
+{% endfor %}
+
+</div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div id="scroll" class="centered-pills">
+			<ul class="nav nav-pills note">
+				<li role="presentation">
+					<a class="off" href="/blog/">
+						<i class="fa fa-chevron-up fa-fw"></i> Back to top
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
