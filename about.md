@@ -1,6 +1,7 @@
 ---
 layout: markdown
 title: about
+description: "About the Barthel Laboratory website: its purpose, the source code and design it builds on, and how to get in touch."
 categories:
  - about
 ---

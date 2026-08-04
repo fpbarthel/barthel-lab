@@ -1,6 +1,7 @@
 ---
 layout: default
 title: publications
+description: "Publications from the Barthel Laboratory at TGen on telomere dysfunction, genome evolution in cancer, and pangenome methods."
 categories:
  - publications
 ---
@@ -13,9 +14,11 @@ categories:
     			<div class="smallhead mb-1"><a href="{{ publication.url }}" class="off">{{ publication.title }}</a></div>
     			<p class="note">{{ publication.ref }}</p>
   			</div>
+        {% if publication.image %}
         <a href="{{ publication.url }}">
-          <img class="ml-3" width=100 class="media-object" src="{{ publication.image }}">
+          <img class="ml-3" width=100 class="media-object" src="{{ publication.image }}" alt="{{ publication.title | escape }}">
         </a>
+        {% endif %}
 			</div>
 			<div class="bigspacer"></div>
 			<div class="spacer"></div>
@@ -62,9 +65,11 @@ categories:
           <div class="smallhead mb-1"><a href="{{ publication.url }}" class="off">{{ publication.title }}</a></div>
           <p class="note">{{ publication.ref }}</p>
         </div>
+        {% if publication.image %}
         <a href="{{ publication.url }}">
-          <img class="ml-3" width=100 class="media-object" src="{{ publication.image }}">
+          <img class="ml-3" width=100 class="media-object" src="{{ publication.image }}" alt="{{ publication.title | escape }}">
         </a>
+        {% endif %}
       </div>
       <div class="bigspacer"></div>
       <div class="spacer"></div>

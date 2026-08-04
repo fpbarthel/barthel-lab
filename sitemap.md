@@ -1,6 +1,7 @@
 ---
 layout: markdown
 title: sitemap
+description: "Sitemap for the Barthel Laboratory website, linking to research, news, blog, publications and team pages."
 categories:
  - sitemap
 ---
