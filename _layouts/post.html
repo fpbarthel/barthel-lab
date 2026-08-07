@@ -28,12 +28,13 @@ layout: default
 		<div class="col-lg-10">
 			{% if page.image %}
 			{% assign image_alt = page.image_alt | default: page.title %}
+			{% if page.categories.first == 'blog' %}{% assign image_class = 'offset blog-lead' %}{% else %}{% assign image_class = 'offset' %}{% endif %}
 			{% if page.link %}
 			<a href="{{ page.link }}">
-				<img class="offset" src="{{ page.image }}" alt="{{ image_alt | escape }}">
+				<img class="{{ image_class }}" src="{{ page.image }}" alt="{{ image_alt | escape }}">
 			</a>
 			{% else %}
-			<img class="offset" src="{{ page.image }}" alt="{{ image_alt | escape }}">
+			<img class="{{ image_class }}" src="{{ page.image }}" alt="{{ image_alt | escape }}">
 			{% endif %}
 			{% endif %}
 			<div class="post">

@@ -269,6 +269,21 @@ img.avatar {
   margin-bottom: 10px;
 }
 
+/* Blog post lead image: half width, and unfloated so the post body and its
+   figures stack below it rather than riding up alongside the float. */
+img.blog-lead {
+  float: none;
+  display: block;
+  max-width: 50%;
+  margin: 0 auto 16px auto;
+}
+
+@media (max-width: 767px) {
+  img.blog-lead {
+    max-width: 100%;
+  }
+}
+
 /* Blog index: cap the lead image so the timeline stays scannable */
 img.blog-thumb {
   display: block;
@@ -280,6 +295,8 @@ img.blog-thumb {
 
 /* Blog post figures: cap height so long figures do not dominate the page */
 .post figure {
+  clear: both;
+  display: block;
   margin: 24px auto 28px auto;
   text-align: center;
 }
