@@ -1,0 +1,26 @@
+# Footer "Our Supporters" logos, rendered by _layouts/default.html.
+#
+# Order here is the display order. Logos are sized by CSS (.supporter-logo),
+# not by width/height attributes, so they stay optically balanced regardless
+# of each file's aspect ratio — add a new one and it will match.
+#
+# name: used as the img alt text and link title
+# url:  organisation homepage
+# logo: path under /images/support/ — prefer a transparent PNG, tightly
+#       cropped (no built-in whitespace padding), roughly 600-750px wide
+
+- name: Translational Genomics Research Institute
+  url: https://www.tgen.org/
+  logo: /images/support/tgen.png
+
+- name: City of Hope
+  url: https://www.cityofhope.org/
+  logo: /images/support/coh.png
+
+- name: Congressionally Directed Medical Research Programs
+  url: https://cdmrp.health.mil/
+  logo: /images/support/cdmrp.png
+
+- name: Lennar Foundation
+  url: https://www.lennar.com/about/lennar-foundation
+  logo: /images/support/lennar.png

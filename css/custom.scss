@@ -463,3 +463,71 @@ img.photo {
     opacity: 0;
   }
 }
+
+/* ---- Footer "Our Supporters" logo strip ----
+ *
+ * Logos come from _data/supporters.yml and vary widely in aspect ratio
+ * (4.7:1 to 2.4:1). Sizing them by width — as the old markup did with a
+ * hardcoded width="150" — makes tall logos tower over wide ones. Constraining
+ * *height* instead is what keeps a mixed logo strip optically balanced, with
+ * max-width as a backstop so a very wide logo can't overflow its cell.
+ *
+ * Flex-wrap rather than Bootstrap columns: the row reflows to the available
+ * width at any breakpoint, so adding or removing a supporter needs no class
+ * changes, and there is no full-width-per-logo stacking on phones.
+ */
+.supporters {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1.75rem 2.5rem;
+}
+
+.supporters .supporter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* Reserve a consistent cell so wrapping stays even across rows. */
+	flex: 0 1 auto;
+	min-width: 0;
+}
+
+.supporter-logo {
+	display: block;
+	max-height: 46px;
+	max-width: 160px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	/* Logos are mixed-provenance; a subtle desaturation on rest unifies them
+	 * without hiding brand colour on interaction. */
+	opacity: 0.85;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.supporters a:hover .supporter-logo,
+.supporters a:focus .supporter-logo {
+	opacity: 1;
+}
+
+/* Narrow phones: smaller cap so four logos still wrap to a tidy two-up. */
+@media (max-width: 575.98px) {
+	.supporters {
+		gap: 1.25rem 1.5rem;
+	}
+	.supporter-logo {
+		max-height: 38px;
+		max-width: 130px;
+	}
+}
+
+/* Respect reduced-motion preferences. */
+@media (prefers-reduced-motion: reduce) {
+	.supporter-logo {
+		transition: none;
+	}
+}
