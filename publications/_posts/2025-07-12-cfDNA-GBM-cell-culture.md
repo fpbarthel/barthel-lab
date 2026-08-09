@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: Cell-Free DNA Sequencing Uncovers the Longitudinal Consequences of Temozolomide Treatment and Host Co-Culture in Glioblastoma
+title: Cell-Free DNA Reveals the Longitudinal Effects of Temozolomide Treatment and Host Co-Culture in Glioblastoma Models
 image: /publications/data/cfDNA.jpg
 authors: Sharvari Mankame, Hersh Nanda, Maria Kyriakidou, Mimi Mbegbu, Nanyun Tang, Michael Berens, Floris Barthel†
 year: 2025
