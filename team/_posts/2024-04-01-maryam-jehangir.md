@@ -1,6 +1,7 @@
 ---
 layout: member
 alumni: true
+current: Scientist, University of Tennessee Health Science Center
 title: Maryam Jehangir
 position: Postdoctoral Fellow
 linkedin: maryam-jehangir-1b3098130

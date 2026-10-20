@@ -2,6 +2,7 @@
 layout: member
 title: Hersh Nanda
 alumni: true
+current: MD Student, Arizona State University
 position: Helios Scholar
 handle:
 email: 

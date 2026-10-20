@@ -2,8 +2,8 @@
 layout: member
 alumni: false
 current: 
-title: Divyansh Singh
-position: Graduate Student
+title: Divyansh
+position: MS Student
 linkedin: 
 github: Divy-tgen
 image: /images/team/divyansh-singh.jpeg

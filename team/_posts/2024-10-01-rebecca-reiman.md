@@ -3,11 +3,13 @@ layout: member
 alumni: true
 current: 
 title: Rebecca Reiman
-position: Research Staff
+position: Lab Manager
 linkedin: 
-github: RReiman
+github: 
 image: /images/team/placeholder.jpeg
 website: 
+noindex: true
+sitemap: false
 ---
 
 

@@ -3,7 +3,7 @@ layout: member
 alumni: false
 current: 
 title: Griffin Azrak
-position: Graduate Student
+position: MD/PhD Student
 linkedin: 
 github: 
 image: /images/team/griffin-azrak.jpeg

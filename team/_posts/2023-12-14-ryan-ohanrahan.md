@@ -1,7 +1,7 @@
 ---
 layout: member
 alumni: true
-current: 
+current: MD Student, University of Arizona College of Medicine – Phoenix
 title: Ryan O'Hanrahan
 position: Undergraduate Student
 linkedin: ryanohanrahan

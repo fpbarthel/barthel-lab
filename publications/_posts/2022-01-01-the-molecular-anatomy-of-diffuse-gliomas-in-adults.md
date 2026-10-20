@@ -4,6 +4,7 @@ title: The Molecular Anatomy of Diffuse Gliomas in Adults
 image: /publications/data/thesis-cover.png
 authors: Floris P Barthel
 year: 2022
+ref: Barthel 2022. PhD thesis, Vrije Universiteit Amsterdam.
 pdf: /publications/data/Barthel FP - The Molecular Anatomy of Diffuse Gliomas in Adults.pdf
 ---
 

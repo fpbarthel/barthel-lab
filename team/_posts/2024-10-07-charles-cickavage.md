@@ -3,7 +3,7 @@ layout: member
 alumni: true
 current: 
 title: Charles Cickavage
-position: Intern
+position: Undergraduate Student
 linkedin: charles-cickavage-3715a6252
 github: 
 image: /images/team/charles-cickavage.jpeg

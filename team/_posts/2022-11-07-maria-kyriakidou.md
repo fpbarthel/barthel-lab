@@ -4,6 +4,7 @@ status: current
 title: Maria Kyriakidou
 position: Postdoctoral Fellow
 alumni: true
+current: Scientist, Mayo Clinic Arizona
 handle:
 email: 
 twitter: mariaiscurious

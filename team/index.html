@@ -54,7 +54,8 @@ categories:
 {% for member in site.categories.team reversed %}
 	{% if member.alumni == true %}
     {% cycle 'add rows 2': '<div class="row">', '', '' %}
-		<div class="col-lg-4 memberbox">
+		{% comment %}Members with noindex: true (e.g. Rebecca Reiman) are kept out of Google snippets for this page too.{% endcomment %}
+		<div class="col-lg-4 memberbox"{% if member.noindex %} data-nosnippet{% endif %}>
 			<div class="media">
   				<!--
   				<a class="pull-left" href="{{ member.url }}">
@@ -62,7 +63,7 @@ categories:
   				</a>
   				-->
  			 	<div class="media-body">
-    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+    				<div class="head media-heading"><a href="{{ member.url }}" class="off"{% if member.noindex %} rel="nofollow"{% endif %}>{{ member.title }}</a></div>
     				<p class="note">{{ member.position }}<br>
     				{% if member.current %}Current: {{ member.current }}</p>{% endif %}
   				</div>

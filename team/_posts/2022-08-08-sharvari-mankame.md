@@ -2,7 +2,7 @@
 layout: member
 alumni: false
 title: Sharvari Mankame
-position: Graduate Student
+position: PhD Student
 linkedin: 
 github: SharvariMankame
 image: /images/team/sharvari-mankame-resized.jpeg

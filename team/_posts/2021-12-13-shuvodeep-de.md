@@ -3,7 +3,7 @@ layout: member
 title: Shuvodeep De
 alumni: true
 position: Postdoctoral Fellow
-current: Scientist at Oak Ridge National Laboratory
+current: Lecturer, Texas State University
 handle:
 email: 
 twitter: 

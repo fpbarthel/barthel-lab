@@ -1,9 +1,9 @@
 ---
 layout: member
-alumni: false
-current: 
+alumni: true
+current: PhD Student, University of Connecticut
 title: Nicholas Costigan
-position: Graduate Student
+position: MS Student
 linkedin: 
 github: neuroleptic
 image: /images/team/placeholder.jpeg

@@ -3,7 +3,7 @@ layout: member
 alumni: false
 current: 
 title: Daniel Chambers
-position: Graduate Student
+position: PhD Student
 linkedin: dchambers00
 github: 
 image: /images/team/daniel-chambers.jpeg

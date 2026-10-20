@@ -2,7 +2,7 @@
 layout: member
 alumni: true
 title: Victoria Jimenez
-position: Undergraduate Student
+position: Helios Scholar
 linkedin: victoria-jimenez583543222
 github: 
 image: /images/team/victoria-jimenez.jpeg

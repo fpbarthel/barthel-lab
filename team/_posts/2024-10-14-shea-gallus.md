@@ -1,7 +1,7 @@
 ---
 layout: member
-alumni: false
-current: 
+alumni: true
+current: Assistant Professor, Medical College of Wisconsin
 title: Shea Gallus
 position: Clinical Fellow
 linkedin: 
